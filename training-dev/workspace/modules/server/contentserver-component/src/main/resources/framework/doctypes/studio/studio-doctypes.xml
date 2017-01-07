@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2009/documenttypes"
+				   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+				   Root="Settings"
+                   Name="studio-doctypes"
+                   Title="Studio Doctypes">
+ 
+  <ImportGrammar Name="coremedia-struct-2008" From="required-doctypes"/>
+  
+  <DocType Name="Settings">
+   <XmlProperty Name="settings" Grammar="coremedia-struct-2008" />
+   <StringProperty Name="identifier" Length="100"/>
+  </DocType>
+  
+</DocumentTypeModel>

@@ -1,0 +1,9 @@
+body {
+  background-repeat: no-repeat;
+
+  background-position: 0 0;
+
+  background-image: url(/coredining/img/backgrounds/orange.jpg);
+  
+  background-attachment: fixed;
+}

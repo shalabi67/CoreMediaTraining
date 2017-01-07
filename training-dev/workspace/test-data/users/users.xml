@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+
+  <group capid="coremedia:///cap/group/0" name="administratoren" contentgroup="true" livegroup="true"
+         administrative="true">
+    <members>
+      <user id="adam" name="adam" home="/Home/adam"/>
+    </members>
+  </group>
+  
+  <group name="chief editor" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <user id="pamela" name="pamela" home="/Home/pamela" />
+      <user id="brenda" name="brenda" home="/Home/brenda" />
+    </members>
+  </group>
+  
+  <group name="translation-manager-role" contentgroup="true" livegroup="false">
+    <members>
+      <userref id="adam"/>
+    </members>
+  </group>
+  
+  <group name="composer-role" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <userref id="pamela"/>
+      <userref id="brenda"/>
+    </members>
+  </group>
+  
+  <group name="approver-role" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <userref id="brenda"/>
+    </members>
+  </group>
+  
+  <group name="publisher-role" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <userref id="pamela"/>
+      <userref id="brenda"/>
+    </members>
+  </group>
+  
+</repository>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/English/Navigation" name="introContainer" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>CoreMedia à la carte</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="Core%2EDining%20English.xml" path="/Sites/Core%2EDining/English/Navigation/Core%2EDining%20English"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<contents>
+<link href="intro.xml" path="/Sites/Core%2EDining/English/Navigation/intro"/>
+</contents>
+</Container>

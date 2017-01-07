@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:com/coremedia/rest/cap/cap-rest-service.xml"/>
+  <import resource="classpath:com/coremedia/cap/common/uapi-services.xml"/>
+
+  <bean id="referrersResource" class="com.coremedia.coredining.studio.rest.ReferrersResource">
+    <property name="connection" ref="connection" />
+  </bean>
+
+  <bean id="topicNavigationValidator" class="com.coremedia.coredining.studio.validation.TopicNavigationValidator"
+        parent="contentTypeValidator">
+    <property name="contentType" value="Topic" />
+  </bean>
+
+  <bean id="articleValidator" parent="contentTypeValidator">
+    <property name="contentType" value="Article" />
+    <property name="validatingSubtypes" value="true" />
+    <property name="validators">
+      <list>
+        <bean class="com.coremedia.rest.validators.NotEmptyValidator">
+          <property name="property" value="title" />
+          <property name="severity" value="ERROR" />
+        </bean>
+        <bean class="com.coremedia.rest.validators.NotEmptyValidator">
+          <property name="property" value="text" />
+          <property name="severity" value="ERROR" />
+        </bean>
+        <bean class="com.coremedia.rest.cap.validators.LinkListMinLengthValidator">
+          <property name="property" value="homeTopic" />
+          <property name="minLength" value="1" />
+          <property name="severity" value="WARN" />
+          <property name="code" value="tooShort" />
+        </bean>
+        <bean class="com.coremedia.rest.cap.validators.LinkListMaxLengthValidator">
+          <property name="property" value="homeTopic" />
+          <property name="maxLength" value="1" />
+          <property name="severity" value="INFO" />
+          <property name="code" value="tooLong" />
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+</beans>

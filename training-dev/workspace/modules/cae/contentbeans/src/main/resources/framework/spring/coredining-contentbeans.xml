@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!--
+  Generated content bean mappings. These are spring prototype bean definitions with a special
+  naming scheme. These are called by the bean factory in .../framework/contentbeanfactory.xml.
+  -->
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  
+  <!--  === CONTENT BEAN DEFINITIONS === -->
+  
+  <bean name="contentBeanFactory:Article" class="com.coremedia.coredining.contentbeans.ArticleImpl" scope="prototype" />
+  <bean name="contentBeanFactory:Image" class="com.coremedia.coredining.contentbeans.ImageImpl" scope="prototype" />
+  <bean name="contentBeanFactory:Container" class="com.coremedia.coredining.contentbeans.ContainerImpl" scope="prototype" />
+  <bean name="contentBeanFactory:Topic" class="com.coremedia.coredining.contentbeans.TopicImpl" scope="prototype" />
+  <bean name="contentBeanFactory:Site" class="com.coremedia.coredining.contentbeans.SiteImpl" scope="prototype" />
+  <bean name="contentBeanFactory:PageLayout" class="com.coremedia.coredining.contentbeans.PageLayoutImpl" scope="prototype" />
+  <bean name="contentBeanFactory:ClientCode" class="com.coremedia.coredining.contentbeans.ClientCodeImpl" scope="prototype" />
+  <bean name="contentBeanFactory:Symbol" class="com.coremedia.coredining.contentbeans.SymbolImpl" scope="prototype" />
+  <bean name="contentBeanFactory:Settings" class="com.coremedia.coredining.contentbeans.SettingsImpl" scope="prototype" />
+  
+</beans>

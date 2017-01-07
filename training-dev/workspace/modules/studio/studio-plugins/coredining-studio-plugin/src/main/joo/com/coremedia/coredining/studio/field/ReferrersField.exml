@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exml:component xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                xmlns="exml:ext.config"
+                xmlns:ui="exml:com.coremedia.ui.config" xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                baseClass="com.coremedia.coredining.studio.field.ReferrersFieldBase">
+
+  <exml:import class="com.coremedia.cms.editor.sdk.util.ContentLocalizationUtil" />
+  <exml:import class="com.coremedia.cms.editor.sdk.util.ContentLifecycleUtil" />
+
+  <exml:cfg name="bindTo" type="com.coremedia.ui.data.ValueExpression" />
+
+  <container cls="x-form-item"
+             labelSeparator=""
+             layout="form">
+    <items>
+      <label cls="x-form-item-label" text="{ReferrersField_properties.INSTANCE.ReferrersField_title}" />
+      <panel cls="">
+        <items>
+          <panel cls="version-history-panel">
+            <items>
+              <listview itemId="referrerList"
+                        columnSort="false"
+                        multiSelect="true"
+                        hideHeaders="true"
+                        cls="version-history-listview">
+                <plugins>
+                  <ui:bindListPlugin bindTo="{getReferrersValueExpression()}">
+                    <ui:fields>
+                      <ui:dataField name="contentTypeIconCls"
+                                    ifError=""
+                                    ifUnreadable="cm-no-rights-name"
+                                    mapping="type"
+                                    convert="{ContentLocalizationUtil.getIconStyleClassForContentType}"/>
+                      <ui:dataField name="path"
+                                    mapping="path"
+                                    ifError=""
+                                    ifUnreadable=""/>
+                      <ui:dataField name="status"
+                                    mapping=""
+                                    convert="{ContentLifecycleUtil.getDetailedLifecycleStatus}"
+                                    ifError=""
+                                    ifUnreadable="" />
+                    </ui:fields>
+                  </ui:bindListPlugin>
+                  <ui:bindSelectionPlugin selectedValues="{getSelectionValueExpression()}"/>
+                </plugins>
+                <columns>
+                  <lvcolumn dataIndex="contentTypeIcon" width="0.06"
+                            tpl='&lt;img width="16" height="16" class="{contentTypeIconCls} content-type-xs cm-before-text-icon" src="{Ext.BLANK_IMAGE_URL}"/>'/>
+                  <lvcolumn dataIndex="path" width=".88"
+                            tpl='&lt;span>{path}&lt;/span>'/>
+                  <lvcolumn dataIndex="lifecycleStatusIcon" width=".06"
+                            tpl='&lt;img width="16" height="16" class="status-{status}" src="{Ext.BLANK_IMAGE_URL}"/>'/>
+                </columns>
+              </listview>
+            </items>
+          </panel>
+        </items>
+        <tbar>
+          <toolbar cls="custom-toolbar-xs">
+            <items>
+              <ui:iconButton itemId="refresh"
+                             handler="{loadReferrers}"
+                             iconCls="cm-16-redo"
+                             tooltip="{ReferrersField_properties.INSTANCE.ReferrersField_refresh_tooltip}">
+              </ui:iconButton>
+              <ui:iconButton itemId="openInTab">
+                <baseAction>
+                  <editor:openInTabAction itemId="openInTab"
+                                          contentValueExpression="{getSelectionValueExpression()}" />
+                </baseAction>
+              </ui:iconButton>
+            </items>
+          </toolbar>
+        </tbar>
+      </panel>
+    </items>
+  </container>
+
+</exml:component>

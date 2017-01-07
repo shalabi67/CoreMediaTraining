@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/German/Navigation/trusted" name="introContainer" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Content is king - auch beim Kochen</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<contents>
+<link href="intro.xml" path="/Sites/Core%2EDining/German/Navigation/trusted/intro"/>
+</contents>
+</Container>

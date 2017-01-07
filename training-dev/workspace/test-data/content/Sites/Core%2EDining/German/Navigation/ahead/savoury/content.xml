@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/German/Navigation/ahead/savoury" name="content" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Hauptgang</title>
+<keywords></keywords>
+<view>
+<link href="../../../../../../Settings/Viewtypes/Container/listOfTeasers.xml" path="/Settings/Viewtypes/Container/listOfTeasers"/>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<contents>
+<link href="../../../Editorial/Content/ahead/Partyspaghetti.xml" path="/Sites/Core%2EDining/German/Editorial/Content/ahead/Partyspaghetti"/>
+<link href="../../../Editorial/Content/ahead/Wodkanudeln.xml" path="/Sites/Core%2EDining/German/Editorial/Content/ahead/Wodkanudeln"/>
+</contents>
+</Container>

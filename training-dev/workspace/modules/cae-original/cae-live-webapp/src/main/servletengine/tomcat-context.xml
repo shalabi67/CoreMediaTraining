@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- this file enables Tomcat to reload changed resources (= templates) from the given directories while running. -->
+<Context logEffectiveWebXml="false">
+  <!--
+    value for Resources#extraResourcePaths MUST NOT contain any separating character other than a "," and MUST be ended after the
+     last character by a " directly !!!
+
+    this will work: extraResourcePaths="/=a,/=b"
+    this will NOT work: extraResourcePaths="/=a,/=b "
+    this will NOT work: extraResourcePaths="/=a, /=b"
+
+  -->
+  <Resources className="org.apache.naming.resources.VirtualDirContext"
+      extraResourcePaths="/=${project.basedir}/src/main/webapp,/=${project.basedir}/../cae-base-lib/src/main/resources/META-INF/resources" />
+
+
+</Context>

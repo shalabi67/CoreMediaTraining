@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/English/Editorial/Content/global" name="Hanseatic Chicken Foot Soup" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Hanseatic Chicken Foot Soup </title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/global/topic.xml" path="/Sites/Core%2EDining/English/Navigation/global/topic"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Personal</p><p>The idea for this menu came from my good friend Russ Meyer. He sent me his recipe for the chicken feet and I thought it would make a wonderful addition to the global meals. Although the feet take a long time to cook, you are free most of that time to do other things watching movies from Russ perhaps.</p><p/><p class="p--heading-2">Content<br/></p><p>for 4 persons<br/></p><p class="p--heading-3"/><p>3 lb chicken wings or backs <br/>3 lb chicken feet <br/>half head garlic (unpeeled) <br/>2-3 leeks washed, cut into fourths <br/>1 lg onion, peeled, cut into fourths <br/>6-8 celery stalks, cut into fourths + leaves <br/>salt to taste <br/>20-25 peppercorns (white) <br/>3-4 sprigs fresh thyme <br/>1 bunch parsley </p><p><br/></p><p class="p--heading-2">Management</p><p>Put chicken parts in stockpot and add water to cover, bring to a simmer, skimming all the while. When scum ceases add remaining ingredients. Bring back to a simmer. Cover, leaving small opening. Simmer for 2-3 hours. Strain broth through washed cheese cloth, discard all other ingredients. Put broth in refrigerator after cooled and let broth harden on the top. Remove fat from top and discard.</p></div></text>
+<image>
+<link href="../../Pictures/Duck%20Feet.xml" path="/Sites/Core%2EDining/English/Editorial/Pictures/Duck%20Feet"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

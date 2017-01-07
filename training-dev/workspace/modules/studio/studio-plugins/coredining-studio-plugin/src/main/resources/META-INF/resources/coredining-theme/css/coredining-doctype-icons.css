@@ -1,0 +1,78 @@
+/**
+  * 16px icons default
+  */
+.ContentType-Article-icon,
+.ContentType-Image-icon,
+.ContentType-Container-icon,
+.ContentType-Topic-icon,
+.ContentType-PageLayout-icon,
+.ContentType-ClientCode-icon,
+.ContentType-Symbol-icon,
+.ContentType-ExternalArticle-icon {
+  background-image: url(../images/coredining-doctype-icons-16.png) !important;
+  margin-right: 2px;
+}
+
+.ContentType-Article-icon {
+  background-position: -208px top !important;
+}
+.ContentType-Image-icon {
+  background-position: -176px top !important;
+}
+.ContentType-Container-icon {
+  background-position: -272px top !important;
+}
+.ContentType-Topic-icon {
+  background-position: -64px top !important;
+}
+.ContentType-PageLayout-icon {
+  background-position: -80px top !important;
+}
+.ContentType-ClientCode-icon {
+  background-position: -128px top !important;
+}
+.ContentType-Symbol-icon {
+  background-position: 0 top !important;
+}
+.ContentType-ExternalArticle-icon {
+  background-position: -192px top !important;
+}
+
+/**
+  * 64px icons default
+  */
+.large .ContentType-Article-icon,
+.large .ContentType-Image-icon,
+.large .ContentType-Container-icon,
+.large .ContentType-Topic-icon,
+.large .ContentType-PageLayout-icon,
+.large .ContentType-ClientCode-icon,
+.large .ContentType-Symbol-icon,
+.large .ContentType-ExternalArticle-icon {
+  background-image: url(../images/coredining-doctype-icons-64.png) !important;
+}
+
+.large .ContentType-Article-icon {
+  background-position: -832px top !important;
+}
+.large .ContentType-Image-icon {
+  background-position: -704px top !important;
+}
+.large .ContentType-Topic-icon {
+  background-position: -320px top !important;
+}
+.large .ContentType-Container-icon {
+  background-position: -1088px top !important;
+}
+.large .ContentType-ClientCode-icon {
+  background-position: -512px top !important;
+}
+.large .ContentType-Symbol-icon {
+  background-position: -192px top !important;
+}
+.large .ContentType-ExternalArticle-icon {
+  background-position: -768px top !important;
+}
+.large .ContentType-PageLayout-icon {
+  background-position: -384px top !important;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Topic folder="/Sites/Core.Dining/English/Navigation/global/savoury" name="topic" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>savoury</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<subTopics>
+</subTopics>
+<pageLayout>
+</pageLayout>
+<relatedContainers>
+</relatedContainers>
+<contentContainers>
+<link href="content.xml" path="/Sites/Core%2EDining/English/Navigation/global/savoury/content"/>
+</contentContainers>
+</Topic>

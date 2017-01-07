@@ -1,0 +1,259 @@
+<html>
+  <head><title>Core.Dining - Getting Started</title>
+      <style type="text/css">
+           body {
+             background: #F6F6F6;
+             color: #262626;
+             font-family: Verdana,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans serif;
+             font-size: 12px;
+             line-height: 20px;
+             margin: 0px;
+             text-align:center;
+           }
+           h1, h2, h3, h4 {
+             color: #4189DD;
+             font-weight: normal;
+             margin-bottom: 6px;
+           }
+          .center {
+            text-align: left;
+            padding-top: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+          }
+          .section {
+            background-color: #FFFFFF;
+            border: 1px solid #ECECEC;
+            margin: 0 10px 20px 0;
+            overflow: hidden;
+            padding: 20px 24px 10px;
+            width: 750px;
+          }
+          #header {
+            background: url(data:image/gif;base64,R0lGODlhAQBsANUAAEFERDw/Pzs9PUFFRT5AQENHRzU2Njs+PkRHRz1AQD0/Pzo9PUNGRjk8PEZJSUJGRjY3N0VISDM1NUBERAoKCkVJSUJFRTw+PkBDQ0RISDo8PD5BQTQ2Nj9CQjc5OTQ1NTk7Ozg6OjY4ODU3Nx4eHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABAGwAAAZIQJJwOJR8jkeOkmMwjJ7QEURErXqu15B2C+p2G5rwYiEQHA6XdCCgUCQSBMJmvunYO5j8BMAfDCyADwwMBQUICBmJERWMDhRBADs=) repeat-x scroll left top;
+            height: 108px;
+          }
+          table {
+            font-size: 12px;
+            border: 1px solid #ECECEC;
+            
+          }  
+          td {
+            vertical-align: top;
+            color: #4189DD;
+          }
+          td.key {
+            color:#262626;
+          }
+          th {
+            background: #ECECEC;
+            font-weight: bold;
+            text-align: left;
+          }
+          table col.key {
+            width: 100px;
+          }
+          table col.value {
+            width: 400px;
+          }
+          img {
+            border-style: none;
+          }
+          a {
+            color: #4189DD;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #B9CF00;
+          }
+          #footer {
+            background-color: #DFDFDF;
+            border-top: 1px solid #B9CF00;
+            clear: both;
+            color: #898989;
+            font-size: 11px;
+            font-weight: normal;
+            line-height: 15px;
+            margin-top: 30px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            position: relative;
+            width: 100%;
+          }
+          #cm-logo {
+            display: block;
+            width: 188px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAAyCAYAAADm87EDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABfNJREFUeNrsnT1sHEUUx+ecgyhSwAcRIUICTkpaxKam8J0okNJgWhr7agrbaZLO5y40XFxQ+64J7YkiKAXatRT6DVDG0kEBJIC8lpFQwOKYd55dr1f7MTP7MXv2/y+t7nS387m/efPe7N1sg0GQQXXv7bX4ixX5eGLfvT4po7wGuhyqGO5lfiwJyK2MJAS9y49dfoyLGASngJ9Opx3JdF6j0XBFmjZ/aSuWG6RXKZencaKfKdS5qLqn1YUuYEsnH5W0Kf0QbltLAqgALJ5uUiLoVLc1AXseUdu2OfjD3MDzDtrhL6uS6RzeQV2Rrs9fNhXLDdKLPKaS6YY8XS9yoae6ZWvWPa0uNn/pKALf0Eib1A/htlFetqwRIC7DRqgg0Anwga5RyajvFgf/vmrCpgbsJrVK1zV6sQuQI6bNqDbFtDqKfL6WUZetHHUh6/VTyvdriv2Q1DZf7wvLa/M8C4Geg06A76gOfgXR7DXg5VBf9Dj4jjTwvJGDCOw0ag4kfCudi7Upke8o5vNFfqyHoB/FTOtJaWXqvsvz68e4CZtiuu9HPh8L6xlbl7i8FBTXNumyZdsWydM3eMRCNyfsfj6tCgwgDSybl3mfQ78ha+HDfl6Pd86wxIuVCXzSxRGey7pO2sIjfW4FeX22c7hDdSt7VMQMz8Ez5Smsizihy8H30k5ciHTmkNVXBwyq8wqMabfYEta+lenDnxFZIvBL0kbRQVnKTJY10zgSrghgT9BnH15hN65ejGXg9csX7LfvzGIRbx6Ab6fAsiQRyHQyvq9KMu5GVcCv8D6V6Ttd2AdVW3aC/c3FJnv04yG79mqTffTeK2z03f5xYz94zfrm+0MyfDfnAngTfnEJ2qoJ7H6ftkuy7KsZcVVpenZwxEaP95n1zqVj4B8HwLPnh0cWDcS4QPYsuTSn1vZNqqrgWXbwSazS0MxoK8JOg2hQYx4okN3l0I8Tg1Zxd86kyMfuimOY8p3LINOqaukxVx2jQexC5ATbMPR0a9wRRy8CPUXhK+I777xSJq7Px4aDVJoRluegu9pRl4uAJz/HC0G1P81W0vRnpyXScA2i0NPNlqQAqTOVkz3nsNviOrkGZzqjcdaX3/4xO0hPn71gt7/6NfiO3j/64TB8+lrYyjfFjYyu6MjaTVEEvRgrPug74rb6sMZgThXa14gxGlKun4mZTlj3jsn+ffr8n+D9Xy/+Y+7Pf590TOi9UEtY+X4QtIaglw1CwpZlorHq4CasWrgp0Hvs5K4wLbW5Yl09T9l+3ScpqylJVtRP66W0K0+fJLp97PiOuJdRVy+jbSzmXJk6rOg2MGX9XNnCh6GXrPMMePweHlK18Ps6nsCdW2/Mlg+LELktMZY8Szftu9fdBVxCSAH2ZdOw59By3CoNBKVpaU5hD+oO4CEVWXMKO/MD7SauIVQG8P4t//ig80+2pxZ0nhItRWq6ZBaAh1SUe9n684e/R9fJK60/XBpI2joWkY9B2EltAA9VZt1rIAAPnS8BeOg8yQPwkJRUtsKosXCnFYJLA0GJFjJvBpcvGkUOFh6qFvgvPn3LFPS0I7GHG0+QimjLvlWZE387+Hf2W/Uo3Deuvsy+Xm/nqoTmryUduDSQFjRywB+x2w9+mUFfo8EK4CF5if3Zpd0a+pNGjaAfA3hIR9sqJ9cE+qG/5ySAh3QspTdn0Ae7SuMvfpCyuvf2+kxj54Jri01+vJS7fPp5sMLgcbh1DzbowioNpCN6hgA9jEDpB2UUyNJRsU5ttweXBtIJXmc7J8zDwKQ/bgN4qAjox8Kfr6smLGZTWwAP5RFZ+Tru80kz0CdxTwMB8FARrk3d9vrciLoyvrBKA+WW+PtfXbZq7KU9xxXAQ2cJ+l7WQ4sBPFQk9OHdjav22btJbgyAh8oGv8+q21J7LCy7VBwB4KEyXRzajbpTUhETEZwqLY0CeKhs8DvC2hcFPrkt21m+OoCHTIPfZsc7+K5o+PgT4bqMZPx0AA/V1fIT+BTovstOHq1JvvgT8d4hiy7rn8vofwEGAJac7WYAVmSTAAAAAElFTkSuQmCC);
+          }
+          #documentation dt,.services dt {
+            font-weight: bold;
+          }
+      </style>
+  </head>
+  <body>
+    <div id="frame">
+    <div id="header">
+      <div class="center">
+        <a id="cm-logo" href="http://www.coremedia.com" title="Visit CoreMedia"></a>
+      </div>
+    </div>
+    <div class="center">
+
+      <h1>Core.Dining WAD/AWAD Training - Getting Started</h1>
+      <p> Core.Dining is the CoreMedia training application. The following sections describe how the Core.Dining
+          application is build and started. Please read the instructions carefully. </p>
+		  
+      <div class="section">
+        <h2>1. Service URLs</h2>
+        <h3>Content Management Environment</h3>
+        <dl class="services">
+          <dt>Content Management Server</dt>
+          <dd>IOR URL: <a href="http://localhost:41080/coremedia/ior" target="_blank">http://localhost:41080/coremedia/ior</a></dd>
+          
+          <dt>Workflow Server *</dt>
+          <dd>IOR URL: <a href="http://localhost:41080/coremedia/ior" target="_blank">http://localhost:43080/coremedia/ior</a></dd>
+          
+          <dt>Preview CAE</dt>
+          <dd>Overview Page: <a href="http://localhost:40081/coredining/servlet/content/92" target="_blank">http://localhost:40081/coredining/servlet/content/92</a> <br />
+              Article Page: <a href="http://localhost:40081/coredining/servlet/content/22" target="_blank">http://localhost:40081/coredining/servlet/content/22</a> <br />
+          </dd>
+          
+          <dt>Studio</dt>
+          <dd><a href="http://localhost:40080/" target="_blank">http://localhost:40080/</a></dd>
+          
+          <dt>SolR Search Engine</dt>
+          <dd><a href="http://localhost:44080/solr" target="_blank">http://localhost:44080/solr</a></dd>
+        </dl>
+        
+        <h3>Content Delivery Environment</h3>
+        <dl class="services">
+          <dt>Master Live Server *</dt>
+          <dd><a href="http://localhost:42080/coremedia/ior" target="_blank">http://localhost:42080/coremedia/ior</a> </dd>
+          
+          <dt>Replication Live Server *</dt>
+          <dd><a href="http://localhost:48080/coremedia/ior" target="_blank">http://localhost:48080/coremedia/ior</a></dd>
+          
+          <dt>Live CAE *</dt>
+          <dd><a href="http://localhost:49080/coredining/servlet/content/92" target="_blank">http://localhost:49080/coredining/servlet/content/92</a></dd>
+        </dl>
+        <p>* The marked services are not started automatically because they are not required for this training. 
+             In order to start them, use the <code>run.bat</code> scripts in the component directories or uncomment them in the modules element of the 
+             corresponding aggregator pom.xml or build them manually. There are also prepared commented lines in the start scripts.</p>        
+      </div>
+      <div class="section">
+        <h2>2. Building the workspace</h2>
+        <p>In the directory <code>workspace</code> execute the following maven command:</p>
+        <pre>
+          mvn clean install -DskipTests
+        </pre>
+      </div>
+      <div class="section">
+        <h2>3. Setup the databases</h2>
+        <p>You need a PostgreSQL instance running on localhost. The following schemes are required (passwords are the same as the scheme name, e.g 'cms' for scheme 'cms').</p>
+        <table>
+          <col class="key" />
+          <col class="value" />
+          <tr><th colspan="2">Database configuration</th></tr>
+          <tr><td class="key">Database:</td><td>coredining</td></tr>
+          <tr><td class="key">Encoding:</td><td>UTF-8</td></tr>
+          <tr><td class="key">JDBC URL:</td><td>jdbc:postgresql://localhost:5432/coredining</td></tr>
+          <tr><td class="key">Schemes:</td>
+              <td>
+                  <table>
+                    <col class="key" />
+                    <col class="value" />
+                    <tr><th colspan="2">Content Management Server</th></tr>
+                    <tr><td class="key">Scheme name:</td><td>cms</td></tr>
+                    <tr><td class="key">Owner(Password):</td><td>cms(cms)</td>
+                  </table>
+                  
+                  <table>
+                    <col class="key" />
+                    <col class="value" />
+                    <tr><th colspan="2">Master Live Server</th></tr>
+                    <tr><td class="key">Scheme name:</td><td>mls</td></tr>
+                    <tr><td class="key">Owner(Password):</td><td>mls(mls)</td>
+                  </table>
+                  
+                  <table>
+                    <col class="key" />
+                    <col class="value" />
+                    <tr><th colspan="2">Replication Live Server</th></tr>
+                    <tr><td class="key">Scheme name:</td><td>rls</td></tr>
+                    <tr><td class="key">Owner(Password):</td><td>rls(rls)</td>
+                  </table>
+                  
+              </td>
+          </tr>
+        </table>
+      </div>
+      <div class="section">
+        <h2>4. Starting the components</h2>
+        <div>
+          <h3>Quick start</h3>
+          <p> For starting the components use the following scripts. All server components are started in there own command window
+              using the appropriate maven command. To stop a component simply close the corresponding command window.</p>
+ 
+          <dl id="startscripts">
+            <dt><code>00. build workspace.bat</code><dt>
+            <dd>This script executes <code>mvn clean install -DskipTests</code> within the <code>workspace/</code>
+                directory.</dd>
+            <dt><code>01. start servers.bat</code></dt>
+            <dd>Starts the server components. In the default configuration only the Solr and the Content Management Server
+                web application are started. But you can edit the start script to start the Master-Live and the Replication Server
+                as well.</dd>
+            <dt><code>02. import test-data.bat</code></dt>
+            <dd>Imports training content, users, groups and rights into the Content Management Server. 
+                The import data is located at <code>workspace/test-data</code>.
+            </dd>
+            <dt><code>03. start cae webapps.bat</code></dt>
+            <dd>Starts the CAE Preview Web Application. This script is also prepared for starting the live CAE.
+                Just uncomment the appropriate lines.
+            <dt><code>04. start site-manager.bat</code></dt>
+            <dd>Starts the Site Manager Component (a.k.a CoreMedia Editor)</dd>
+            <dt><code>05. approve and publish.bat</code></dt>
+            <dd>A script used to approve and publish all core.dining content.</dd>
+          </dl>
+          <h3>Starting single components</h3>
+          <p> There is also a <code>run.bat</code> script in every web application module for starting the corresponding
+              web application.</p>
+          <dl id="startscripts">
+            <dt><code>workspace/modules/server/content-management-server-webapp/run.bat</code></dt>
+            <dd>Starts the Content Management Server.</dd>
+            <dt><code>workspace/modules/server/master-live-server-webapp/run.bat</code></dt>
+            <dd>Starts the Master Live Server.</dd>
+            <dt><code>workspace/modules/server/replication-live-webapp/run.bat</code></dt>
+            <dd>Starts the Replication Live Server.</dd>
+            <dt><code>workspace/modules/search/solr-webapp/run.bat</code></dt>
+            <dd>Starts the Solr Web Application.</dd>
+            <dt><code>workspace/modules/cae/cae-preview-webapp/run.bat</code></dt>
+            <dd>Starts the CAE Preview Web Application.</dd>
+            <dt><code>workspace/modules/cae/cae-live-webapp/run.bat</code></dt>
+            <dd>Starts the CAE Live Web Application.</dd>
+            <dt><code>workspace/modules/cae/studio-webapp/run.bat</code></dt>
+            <dd>Starts the Studio Web Application.</dd>
+        </div>
+      </div>
+      <div class="section">
+        <h2>5. Documentation</h2>
+        <dl id="documentation">
+          <dt>CoreMedia 8 - Online Documentation</dt>
+          <dd>
+            The complete CoreMedia 8 documentation at the Coremedia Documentation Center. 
+            You need a CoreMedia Unified Login to browse the documentation. <br />
+            <a href="https://documentation.coremedia.com/cm8/overview/" target="_blank">
+                https://documentation.coremedia.com/cm8/overview/
+            </a>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div id="footer">
+      <p class="center">© Copyright 2015. CoreMedia AG. CoreMedia Corporation. All Rights Reserved.</p>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/English/Navigation/global" name="introContainer" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Pleasures without frontiers</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<contents>
+<link href="intro.xml" path="/Sites/Core%2EDining/English/Navigation/global/intro"/>
+</contents>
+</Container>

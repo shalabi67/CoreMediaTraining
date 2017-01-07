@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workflow>
+  <Process name="Translation"
+           description="Translation by Translation Service"
+           startTask="ValidateParameters">
+
+    <Rights>
+      <Grant group="translation-manager-role"
+             rights="create, read, write, start, suspend, resume, abort"/>
+      <Grant user="admin" rights="create, start, suspend, resume, abort"/>
+      <Grant variable="targetSiteManagerGroup"
+             rights="read, write"/>
+    </Rights>
+
+    <Variable name="subject" type="String"/>
+    <Variable name="comment" type="String"/>
+
+    <Variable name="translationAction" type="String"/>
+    <Variable name="targetSiteId" type="String"/>
+    <Variable name="targetSiteManagerGroup" type="Group"/>
+    <Variable name="performer" type="User"/>
+
+    <AggregationVariable name="contents" type="Resource"/>
+    <AggregationVariable name="targetContents" type="Resource"/>
+    <AggregationVariable name="createdContents" type="Resource"/>
+
+    <InitialAssignment>
+      <Writes variable="subject"/>
+      <Writes variable="comment"/>
+      <Writes variable="contents"/>
+      <Writes variable="targetSiteId"/>
+    </InitialAssignment>
+
+    <Assignment>
+      <Writes variable="subject"/>
+      <Writes variable="comment"/>
+      <Writes variable="contents"/>
+      <Writes variable="targetContents"/>
+      <Writes variable="createdContents"/>
+      <Writes variable="translationAction"/>
+      <Writes variable="targetSiteManagerGroup"/>
+      <Writes variable="targetSiteId"/>
+      <Writes variable="performer"/>
+    </Assignment>
+
+    <AutomatedTask name="ValidateParameters" successor="GetDerivedContents">
+      <Action class="RegisterPendingProcess" userVariable="OWNER_"/>
+      <Action class="com.coremedia.translate.workflow.ValidateTranslationParametersAction"
+              contentsVariable="contents"
+              targetSiteIdVariable="targetSiteId"/>
+    </AutomatedTask>
+
+    <AutomatedTask name="GetDerivedContents" successor="CheckIfTargetContentsEmpty">
+      <Action class="com.coremedia.translate.workflow.GetDerivedContentsAction"
+              contentsVariable="contents"
+              targetContentsVariable="targetContents"
+              createdContentsVariable="createdContents"
+              targetSiteIdVariable="targetSiteId"/>
+    </AutomatedTask>
+
+    <If name="CheckIfTargetContentsEmpty">
+      <Condition>
+        <Equal>
+          <IsEmpty variable="targetContents"/>
+          <Boolean value="true"/>
+        </Equal>
+      </Condition>
+      <Then successor="Finish"/>
+      <Else successor="GetTargetSiteManagerGroup"/>
+    </If>
+
+    <AutomatedTask name="GetTargetSiteManagerGroup" successor="Translate">
+      <Action class="com.coremedia.translate.workflow.GetSiteManagerGroupAction"
+              siteVariable="targetSiteId"
+              siteManagerGroupVariable="targetSiteManagerGroup"/>
+    </AutomatedTask>
+
+    <UserTask name="Translate"
+              successor="Switch" reexecutable="true">
+      <Rights>
+        <Grant variable="targetSiteManagerGroup"
+               rights="read, write, accept, complete, cancel"/>
+      </Rights>
+
+      <EntryAction class="com.coremedia.translate.workflow.ExtractPerformerAction"
+                   performerVariable="performer"/>
+
+      <Assignment>
+        <Reads variable="subject"/>
+        <Reads variable="targetSiteId"/>
+        <Writes variable="comment"/>
+        <Writes variable="contents"/>
+        <Writes variable="createdContents"/>
+        <Writes variable="translationAction"/>
+        <Writes variable="performer"/>
+      </Assignment>
+
+      <ExitAction class="RegisterPendingProcess"/>
+    </UserTask>
+
+    <Switch name="Switch" defaultSuccessor="Finish">
+      <Case successor="SendToTranslationService">
+        <Equal>
+          <Get variable="translationAction"/>
+          <String value="sendToTranslationService"/>
+        </Equal>
+      </Case>
+      <Case successor="Rollback">
+        <Equal>
+          <Get variable="translationAction"/>
+          <String value="rollbackTranslation"/>
+        </Equal>
+      </Case>
+      <Case successor="Complete">
+        <Equal>
+          <Get variable="translationAction"/>
+          <String value="finishTranslation"/>
+        </Equal>
+      </Case>
+    </Switch>
+
+    <AutomatedTask name="SendToTranslationService" successor="Review">
+      <Action class="com.coremedia.blueprint.translate.workflow.SendToTranslationServiceAction"
+              contentsVariable="targetContents"/>
+    </AutomatedTask>
+
+    <AutomatedTask name="Rollback" successor="Finish">
+      <Action class="com.coremedia.translate.workflow.RollbackTranslationAction"
+              contentsVariable="createdContents"/>
+    </AutomatedTask>
+
+    <UserTask name="Review" successor="Complete">
+      <Rights>
+        <Grant variable="targetSiteManagerGroup"
+               rights="read, write, accept, complete, cancel"/>
+      </Rights>
+      <Assignment>
+        <Reads variable="subject"/>
+        <Reads variable="targetSiteId"/>
+        <Writes variable="comment"/>
+        <Writes variable="contents"/>
+        <Writes variable="createdContents"/>
+        <Writes variable="translationAction"/>
+      </Assignment>
+
+      <ExitAction class="RegisterPendingProcess"/>
+    </UserTask>
+
+    <AutomatedTask name="Complete" successor="Finish">
+      <Action class="com.coremedia.translate.workflow.CompleteTranslationAction"
+              contentsVariable="targetContents"
+              performerVariable="performer"/>
+    </AutomatedTask>
+
+    <Variable name="finishTaskRetryTimer" type="Timer"/>
+    <TimerHandler class="RetryTaskTimerHandler" task="Finish" timerName="finishTaskRetryTimer"/>
+
+    <AutomatedTask name="Finish" final="true">
+      <Action class="AssignVariable" resultVariable="finishTaskRetryTimer">
+        <Timer value="30"/>
+      </Action>
+      <Action class="EnableTimer" timerVariable="finishTaskRetryTimer"/>
+      <Action class="ArchiveProcess" maxProcessesPerUser="100"/>
+    </AutomatedTask>
+
+  </Process>
+</Workflow>

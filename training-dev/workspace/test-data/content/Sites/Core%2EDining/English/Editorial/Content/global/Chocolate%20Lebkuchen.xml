@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/English/Editorial/Content/global" name="Chocolate Lebkuchen" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Chocolate Lebkuchen</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/global/topic.xml" path="/Sites/Core%2EDining/English/Navigation/global/topic"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Personal</p><p>When you are in the mood for Christmas or when you are relaxing at home, this is the ideal snack.</p><p/><p class="p--heading-2">Content<br/></p><p>for 4 persons<br/></p><p class="p--heading-3"/><p>1 1/4 cups white sugar <br/>3/4 cup honey <br/>2 tablespoons water <br/>2 cups semisweet chocolate chips <br/>1 cup chopped almonds <br/>1/2 cup candied mixed fruit, chopped <br/>2 eggs, beaten <br/>1/4 cup orange juice <br/>2 3/4 cups all-purpose flour <br/>2 teaspoons ground cinnamon <br/>1 teaspoon ground cloves <br/>2 teaspoons ground cardamom <br/>1 teaspoon baking soda <br/>1 teaspoon baking powder <br/>1 1/2 cups confectioners' sugar <br/>2 1/2 tablespoons orange juice <br/>1/4 cup green decorator sugar <br/>1/4 cup cinnamon red hot candies </p><p><br/></p><p class="p--heading-2">Management</p><p>Combine sugar, honey and water in a large saucepan. Bring to a rolling boil, then remove from the heat and set aside to cool. In a medium bowl, stir together the honey mixture with the chocolate chips, almonds, candied fruit, eggs, and orange juice. Sift together the flour, cinnamon, cloves, cardamom, baking soda and baking powder; stir into the fruit and nut mixture. Tightly cover the bowl, and refrigerate for 2 to 3 days to blend the flavors. </p><p>Preheat oven to 325 degrees F (165 degrees C). Grease and flour a 10x15 inch jellyroll pan. Spread the dough evenly into the prepared pan. </p><p>Bake for 35 to 40 minutes in the preheated oven. Cool and frost with the orange frosting. </p><p>To make the orange frosting, put the confectioners' sugar in a small bowl, and beat in the orange juice 1 tablespoon at a time until the desired consistency is reached. Spread over the cooled bars. Cut bars into diamond shapes, and place cinnamon candies on top then sprinkle with the green sugar.</p></div></text>
+<image>
+<link href="../../Pictures/Lebkuchen.xml" path="/Sites/Core%2EDining/English/Editorial/Pictures/Lebkuchen"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

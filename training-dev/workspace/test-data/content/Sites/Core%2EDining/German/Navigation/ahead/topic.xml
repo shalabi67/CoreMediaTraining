@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Topic folder="/Sites/Core.Dining/German/Navigation/ahead" name="topic" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="not-localized-yet">
+<title>ahead</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>de</locale>
+<master>
+<link href="../../../English/Navigation/ahead/topic.xml" path="/Sites/Core%2EDining/English/Navigation/ahead/topic"/>
+</master>
+<subTopics>
+<link href="savoury/topic.xml" path="/Sites/Core%2EDining/German/Navigation/ahead/savoury/topic"/>
+<link href="sweet/topic.xml" path="/Sites/Core%2EDining/German/Navigation/ahead/sweet/topic"/>
+</subTopics>
+<pageLayout>
+<link href="../../../../../Themes/BananaPageLayout.xml" path="/Themes/BananaPageLayout"/>
+</pageLayout>
+<relatedContainers>
+</relatedContainers>
+<contentContainers>
+<link href="introContainer.xml" path="/Sites/Core%2EDining/German/Navigation/ahead/introContainer"/>
+<link href="content.xml" path="/Sites/Core%2EDining/German/Navigation/ahead/content"/>
+</contentContainers>
+</Topic>

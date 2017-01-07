@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/English/Editorial/Content/trusted" name="Fried Eggs" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Fried Eggs</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/trusted/topic.xml" path="/Sites/Core%2EDining/English/Navigation/trusted/topic"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Personal</p><p>The ideal meal when you have little time. Easy to perpare, yet very tasty. You might want to invite a couple of friends to share this delicious meal with you. Therefor we have arranged it as a 4 person meal.</p><p/><p class="p--heading-2">Content<br/></p><p>for 4 persons<br/></p><p class="p--heading-3"/><p>8 eggs<br/>oil<br/>salt<br/>pepper<br/>ketchup</p><p><br/></p><p class="p--heading-2">Management</p><p>Pour some oil into a mid size pan. Crack the eggs into the pan and cook them over medium high heat to desired firmness. Add salt and pepper while cooking. Serve this meal with ketchup.</p></div></text>
+<image>
+<link href="../../Pictures/Fried%20Eggs.xml" path="/Sites/Core%2EDining/English/Editorial/Pictures/Fried%20Eggs"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

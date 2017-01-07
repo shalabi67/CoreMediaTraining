@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exml:component xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                xmlns="exml:ext.config"
+                xmlns:ui="exml:com.coremedia.ui.config"
+                xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                xmlns:coredining="exml:com.coremedia.coredining.studio.config">
+
+  <exml:import class="com.coremedia.cms.editor.ContentTypes_properties" />
+  <exml:import class="com.coremedia.cms.editor.Editor_properties" />
+  <exml:import class="com.coremedia.cms.editor.sdk.collectionview.CollectionViewConstants" />
+  <exml:import class="com.coremedia.coredining.studio.CoreDiningStudioPlugin_properties" />
+  <exml:import class="com.coremedia.cms.editor.sdk.validation.Validators_properties" />
+
+  <editor:studioPlugin>
+    <ui:rules>
+
+      <editor:tabbedDocumentFormDispatcher>
+        <plugins>
+          <editor:addTabbedDocumentFormsPlugin>
+            <editor:documentTabPanels>
+              <coredining:articleForm itemId="Article" />
+            </editor:documentTabPanels>
+          </editor:addTabbedDocumentFormsPlugin>
+        </plugins>
+      </editor:tabbedDocumentFormDispatcher>
+
+      <editor:documentFormDispatcher>
+        <plugins>
+          <editor:addDocumentFormsPlugin>
+            <editor:documentForms>
+              <coredining:containerForm itemId="Container" />
+              <coredining:imageForm itemId="Image" />
+              <coredining:topicForm itemId="Topic" />
+            </editor:documentForms>
+          </editor:addDocumentFormsPlugin>
+        </plugins>
+      </editor:documentFormDispatcher>
+
+      <editor:favoritesToolbar>
+        <plugins>
+          <ui:addItemsPlugin>
+            <ui:items>
+              <button itemId="lastEdited">
+                <baseAction>
+                  <editor:showCollectionViewAction editedByMe="true"
+                                                   text="{Editor_properties.INSTANCE.FavoritesToolbar_lastEdited_btn_text}"/>
+                </baseAction>
+              </button>
+              <button itemId="articles">
+                <baseAction>
+                  <editor:showCollectionViewAction contentType="Article"
+                                                   text="{CoreDiningStudioPlugin_properties.INSTANCE.FavoritesToolbar_articles_btn_text}"/>
+                </baseAction>
+              </button>
+              <button itemId="images">
+                <baseAction>
+                  <editor:showCollectionViewAction contentType="Image"
+                                                   text="{CoreDiningStudioPlugin_properties.INSTANCE.FavoritesToolbar_images_btn_text}"
+                                                   view="{CollectionViewConstants.THUMBNAILS_VIEW}"/>
+                </baseAction>
+              </button>
+              <button itemId="topics">
+                <baseAction>
+                  <editor:showCollectionViewAction contentType="Topic"
+                                                   text="{CoreDiningStudioPlugin_properties.INSTANCE.FavoritesToolbar_topics_btn_text}" />
+                </baseAction>
+              </button>
+
+            </ui:items>
+            <ui:before>
+              <editor:favoritesToolbarUserItemsArea />
+            </ui:before>
+          </ui:addItemsPlugin>
+        </plugins>
+      </editor:favoritesToolbar>
+    </ui:rules>
+    <editor:configuration>
+
+      <editor:copyResourceBundleProperties destination="{Validators_properties}"
+                                           source="{CoreDiningValidators_properties}" />
+      <!-- adding localization of document types 
+      <editor:copyResourceBundleProperties destination="{ContentTypes_properties}"
+                                           source="{CoreDiningDocumentTypes_properties}" />-->
+
+      <!-- Document types that don't have a preview -->
+      <editor:configureDocumentTypes names="PageLayout, ClientCode, Symbol, Site"
+                                     preview="false" />
+
+      <!-- Document types that are used as images -->
+      <editor:configureDocumentTypes names="Image"
+                                     imageProperty="data"
+                                     richTextDropImageProperty="data" />
+
+      <!-- Document types that are excluded from the library -->
+      <editor:configureDocumentTypes names="Content_,Folder_,EditorPreferences,Preferences,Dictionary,Query"
+                                     exclude="true"
+                                     excludeFromSearch="true" />
+
+      <!-- there must be at least one dashlet configured to show the favorite toolbar -->
+      <editor:configureDashboardPlugin>
+        <editor:types>
+          <editor:quickSearchWidgetType/>
+          <editor:simpleSearchWidgetType/>
+        </editor:types>
+      </editor:configureDashboardPlugin>
+    </editor:configuration>
+  </editor:studioPlugin>
+</exml:component>

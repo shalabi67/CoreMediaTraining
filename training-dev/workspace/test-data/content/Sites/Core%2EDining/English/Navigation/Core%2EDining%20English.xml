@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Topic folder="/Sites/Core.Dining/English/Navigation" name="Core.Dining English" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>core.dining</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<subTopics>
+<link href="trusted/topic.xml" path="/Sites/Core%2EDining/English/Navigation/trusted/topic"/>
+<link href="ahead/topic.xml" path="/Sites/Core%2EDining/English/Navigation/ahead/topic"/>
+<link href="global/topic.xml" path="/Sites/Core%2EDining/English/Navigation/global/topic"/>
+</subTopics>
+<pageLayout>
+<link href="../../../../Themes/StarFruitPageLayout.xml" path="/Themes/StarFruitPageLayout"/>
+</pageLayout>
+<relatedContainers>
+<link href="related.xml" path="/Sites/Core%2EDining/English/Navigation/related"/>
+</relatedContainers>
+<contentContainers>
+<link href="introContainer.xml" path="/Sites/Core%2EDining/English/Navigation/introContainer"/>
+<link href="content.xml" path="/Sites/Core%2EDining/English/Navigation/content"/>
+</contentContainers>
+</Topic>

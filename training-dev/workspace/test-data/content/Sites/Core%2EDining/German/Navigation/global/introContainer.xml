@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/German/Navigation/global" name="introContainer" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Genuss kennt keine Grenzen</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<contents>
+<link href="intro.xml" path="/Sites/Core%2EDining/German/Navigation/global/intro"/>
+</contents>
+</Container>

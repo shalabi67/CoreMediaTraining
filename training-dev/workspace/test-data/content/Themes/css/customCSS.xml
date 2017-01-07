@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ClientCode folder="/Themes/css" name="customCSS" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<url>/css/custom.css</url>
+<format>
+<link href="../../Settings/ContentTypes/css.xml" path="/Settings/ContentTypes/css"/>
+</format>
+</ClientCode>

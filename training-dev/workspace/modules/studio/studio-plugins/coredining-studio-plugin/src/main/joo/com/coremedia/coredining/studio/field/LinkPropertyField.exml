@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exml:component xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                xmlns="exml:ext.config"
+                xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                xmlns:ui="exml:com.coremedia.ui.config"
+                xmlns:coredining="exml:com.coremedia.coredining.studio.config"
+                baseClass="com.coremedia.coredining.studio.field.LinkPropertyFieldBase">
+
+  <exml:import class="com.coremedia.cms.editor.Editor_properties" />
+  <exml:import class="com.coremedia.ui.data.ValueExpressionFactory" />
+
+  <exml:cfg name="bindTo" type="com.coremedia.ui.data.ValueExpression" />
+  <exml:cfg name="propertyName" type="String" />
+
+  <container cls="x-form-item"
+             labelSeparator=""
+             layout="form">
+    <items>
+      <panel>
+        <items>
+          <editor:singleLinkField valueExpression="{getLinkListPropertyExpression()}" />
+        </items>
+        <tbar>
+          <toolbar cls="custom-toolbar-xs">
+            <items>
+              <ui:iconButton itemId="delete" handler="{removeLink}" iconCls="remove-icon">
+                <plugins>
+                  <coredining:disableWhenEmptyPlugin listValueExpression="{getLinkListPropertyExpression()}" />
+                </plugins>
+              </ui:iconButton>
+              <ui:iconButton itemId="openInTab">
+                <baseAction>
+                  <editor:openInTabAction itemId="openInTab"
+                                          contentValueExpression="{ValueExpressionFactory.createSingleItemValueExpression(getLinkListPropertyExpression())}" />
+                </baseAction>
+              </ui:iconButton>
+            </items>
+          </toolbar>
+        </tbar>
+      </panel>
+    </items>
+    <plugins>
+      <editor:setPropertyLabelPlugin bindTo="{config.bindTo}"
+                                     propertyName="{config.propertyName}"
+                                     labelProperty="text" />
+    </plugins>
+  </container>
+</exml:component>

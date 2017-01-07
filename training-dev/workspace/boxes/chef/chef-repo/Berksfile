@@ -1,0 +1,6 @@
+source 'https://supermarket.chef.io'
+
+# vendored workspace cookbooks
+cookbook 'coremedia', path: 'cookbooks/coremedia'
+cookbook 'psdash', path: 'cookbooks/psdash'
+cookbook 'blueprint-yum', path: 'cookbooks/blueprint-yum'

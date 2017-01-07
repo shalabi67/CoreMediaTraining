@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Navigation/global" name="intro" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title></title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="topic.xml" path="/Sites/Core%2EDining/German/Navigation/global/topic"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Ob Pasta, Wein, Gewürze, Reis oder Südfrüchte in unserer heutigen Gesellschaft ist Content aus allen Kontinenten jederzeit erhältlich. Die daraus entstehenden Möglichkeiten sind unendlich. Doch wie kocht man in anderen Teilen der Welt? Hier haben wir den Fortgeschrittenen einige Rezepte zum Nachkochen zusammengestellt.</p></div></text>
+<image>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

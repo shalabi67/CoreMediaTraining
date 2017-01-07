@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+          CoreMedia Blueprint Editor Startup Configuration
+          properties/corem/editor-startup.xml
+-->
+
+<Editor>
+  <Locale language="en" country="GB"/>
+</Editor>

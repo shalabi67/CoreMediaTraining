@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Navigation" name="intro" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title></title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="Core%2EDining%20German.xml" path="/Sites/Core%2EDining/German/Navigation/Core%2EDining%20German"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Liebe Freunde, kennen Sie dieses Gefühl, wenn man gemeinsam ein Ziel erreicht hat und anschließend den Erfolg genießt? Unsere Mitarbeiter haben im Rahmen eines außergewöhnlichen Projektes das CoreMedia Kochbuch entwickelt, um das Gefühl mit Ihnen zu teilen. Entstanden ist ein ganz besonderes Buch: mit musikalischen Empfehlungen, persönlichen Anekdoten und unseren Lieblingsrezepten. Freuen Sie sich auf alte Bekannte, die Sie in trusted© wiedertreffen. Werfen Sie in global© einen Blick über den Tellerrand. Oder entdecken Sie in ahead© Rezepte, die eine kleine Portion Mut erfordern. Schauen Sie doch gleich mal rein, lassen Sie sich inspirieren und probieren Sie das eine oder andere einfach aus.</p></div></text>
+<image>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

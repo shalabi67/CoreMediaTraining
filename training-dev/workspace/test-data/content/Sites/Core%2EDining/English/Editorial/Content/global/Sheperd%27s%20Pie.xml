@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/English/Editorial/Content/global" name="Sheperd's Pie" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Sheperd's Pie</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/global/topic.xml" path="/Sites/Core%2EDining/English/Navigation/global/topic"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Personal</p><p>Traditional British cooking does not actually enjoy a good reputation. However, this tasty meal can be an enrichment for any cook world wide.</p><p/><p class="p--heading-2">Content<br/></p><p>for 4 persons<br/></p><p class="p--heading-3"/><p>3/4 - 11/2lb. (350 - 700g.) potatoes, peeled</p><p>1 lb. (450g.) minced lamb, mutton, beef or pork - either cooked or raw</p><p>3 oz. (75g.) butter</p><p>1 medium onion, peeled and finely chopped</p><p>1/2 pint (275/300 ml.) stock</p><p>Salt and pepper</p><p>1 oz. (25 g.) cornflour</p><p>About 1/4 pint (150 ml.) milk</p><p><br/></p><p class="p--heading-2">Management</p><p>Preparation Time: 30 - 40 minutes</p><p>Cooking Time: About 1 hour</p><p>Preheat the oven to 180° (350°F) - Gas Mark 4</p><p/><p>Cut the potatoes in half and place them in a saucepan with salted water to cover. Cook until tender, and drain immediately. While the potatoes are cooking, prepare the mince.</p><p>If the mince is raw, use the following method. Melt 1 oz. (25 g.) of butter in a frying pan and fry the onion lightly in it. Add the mince and stir until lightly browned. Add the stock and simmer gently for 30 minutes. Allow to stand for a few minutes then skim off as much fat as possible. Season highly with the salt and pepper.</p><p>Thicken the liquid a little by stirring in the cornflour, mixed to a paste with a little water. Boil for 3 minutes, stirring constantly to prevent sticking. Turn into an ovenproof dish in which the pie will be served. The meat must cool enough to form a skin before the potato is put on to it.</p><p>If you use meat already cooked, fry the onion as above and stir it into the mince. Season well and add a little thickened stock until the meat has a soft, moist consistency. Set aside to form a skin.</p><p>Mash the cooked potatoes with at least 1 oz. (25 g.) of butter and enough milk to make it creamy. Season well. When the mince has a skin, spread the mashed potato on top carefully, so that it does not sink into the mince. The potato layer should be about 1 - 11/2 in. (2.5 - 4 cm.) thick. Mark the top with a fork, and dot with the remaining butter. Bake for 30 minutes near the top of the oven so that the potato is well browned.</p></div></text>
+<image>
+<link href="../../Pictures/Pie.xml" path="/Sites/Core%2EDining/English/Editorial/Pictures/Pie"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <description>
+    Provides an abstract SiteModel bean which reflects the site structure of
+    the blueprint.  It is abstract in that it has no contentRepository.
+  </description>
+
+  <context:property-placeholder ignore-unresolvable="true"
+                                location="classpath:/my/sitemodel/sitemodel-defaults.properties"/>
+
+  <bean id="siteModel" class="com.coremedia.cap.multisite.DefaultSiteModel">
+    <property name="siteIndicatorDocumentType" value="Site"/>
+    <property name="siteIndicatorDepth" value="1"/>
+    <property name="idProperty" value="id"/>
+    <property name="localeProperty" value="locale"/>
+    <property name="masterProperty" value="master"/>
+    <property name="masterVersionProperty" value="masterVersion"/>
+    <property name="nameProperty" value="name"/>
+    <property name="rootProperty" value="root"/>
+    <property name="siteManagerGroupProperty" value="siteManagerGroup"/>
+    <!-- site indicator name: e.g. Core.Dining English [Site] -->
+    <property name="siteIndicatorNamePattern" value="{0} {5} [Site]"/>
+    <!-- site root topic name: Core.Dining English -->
+    <property name="siteRootDocumentNamePattern" value="{0} {5}"/>
+    <property name="translationManagerRole" value="translation-manager-role"/>
+    <!-- uri segment: e.g. core-dining-en -->
+    <property name="uriSegmentPattern" value="{0}-{4}" />
+    <property name="siteManagerGroupPattern" value="manager-{4}"/>
+    <!-- root folder: e.g. /Sites/Core.Dining/English -->
+    <property name="rootFolderPathPattern" value="/Sites/{0}/{5}"/>
+    <property name="rootFolderPathDefaultCountry" value="NO_COUNTRY"/>
+    <property name="translationWorkflowRobotUser" value="translation-workflow-robot"/>
+  </bean>
+
+</beans>

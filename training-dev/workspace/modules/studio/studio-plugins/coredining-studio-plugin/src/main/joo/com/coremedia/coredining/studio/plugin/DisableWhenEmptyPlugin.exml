@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exml:plugin xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                xmlns="exml:ext.config"
+                baseClass="com.coremedia.coredining.studio.plugin.DisableWhenEmptyPluginBase">
+
+  <exml:cfg name="listValueExpression" type="com.coremedia.ui.data.ValueExpression" />
+
+</exml:plugin>

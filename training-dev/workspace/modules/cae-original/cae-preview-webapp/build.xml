@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<project name="exercise-tools" basedir="." default="noops">
+	<property environment="env"/>
+
+	<property name="maven.executable" location="${env.M2_HOME}/bin/mvn.bat" />
+	<property name="doctypes.xml" location="../../server/contentserver-component/src/main/resources/framework/doctypes/coredining/coredining-doctypes.xml" />
+	
+	<property name="cae.dir" location="${basedir}/.." />
+
+	<path id="coredining.classpath">
+		<fileset dir="target/coredining/WEB-INF/lib" includes="*.jar" />
+	</path>
+
+	<target name="noops">
+		<echo>What should I do?</echo>
+	</target>
+
+	<target name="generate-content-beans" description="Exercise 4: generate content beans">
+		<java classname="com.coremedia.objectserver.beans.codegen.impl.BeanGenerator" fork="true">
+			<classpath refid="coredining.classpath"/>
+			<arg line='-o src/main/java -p com.coremedia.coredining.contentbeans -d ${doctypes.xml} -generics'/>
+		</java>
+	</target>
+	
+	<target name="refactor-workspace" description="Refactor your workspace">
+		<!-- refactor contentbeans and configuration -->
+		<mkdir dir="${cae.dir}/contentbeans/src/main/java" />
+		<mkdir dir="${cae.dir}/contentbeans/src/main/resources" />
+		<move todir="${cae.dir}/contentbeans">
+			<fileset dir="${cae.dir}/cae-preview-webapp/">
+				<include name="src/main/java/com/coremedia/coredining/contentbeans/*" />
+				<include name="src/main/resources/framework/spring/coredining-contentbeans.xml" />
+				<include name="src/main/resources/framework/dataviews/*.*" />
+			</fileset>
+		</move>
+		
+		<!-- refactor CAE business logic and configuration -->
+		<move todir="${cae.dir}/cae-base-lib" >
+			<fileset dir="${cae.dir}/cae-preview-webapp/">
+				<include name="src/main/java/com/coremedia/coredining/**" />
+				<include name="src/main/resources/framework/spring/*.*" />
+			</fileset>
+		</move>
+		
+		<!-- refactor web resources-->
+		<mkdir dir="${cae.dir}/cae-base-lib/src/main/resources/META-INF/resources" />
+		<move todir="${cae.dir}/cae-base-lib/src/main/resources/META-INF/resources">
+			<fileset dir="${cae.dir}/cae-preview-webapp/src/main/webapp">
+				<include name="**/*" />
+				<exclude name="WEB-INF/application.properties" />
+				<exclude name="WEB-INF/logback.xml" />
+			</fileset>
+		</move>
+		
+		<!-- cleanup -->
+		<delete dir="${cae.dir}/cae-preview-webapp" includeemptydirs="true">
+			<include name="src/main/java/**" />
+			<include name="src/main/resources/**" />
+		</delete>
+		
+	</target>
+
+	<target name="create-external-content"
+	            description="Creates the dummy thirdparty database">
+		<sql driver="org.postgresql.Driver"
+	        	 url="jdbc:postgresql://localhost:5432/coredining"
+	        	 userid="external"
+	           password="external">
+			<classpath refid="coredining.classpath"/>            
+
+	            create table externalrecipes (
+	            id INT,
+	            title VARCHAR(120),
+	            keywords VARCHAR(120),
+	            body VARCHAR(520),
+	            modtime INT
+	            );
+
+	            insert into externalrecipes values(1,'Classic Macaroni Salad','macaroni, salad',
+	        		'Bring a large pot of lightly salted water to a boil. Add the macaroni, and cook until tender, about 8 minutes. Rinse under cold water and drain.', 10);
+	            insert into externalrecipes values(2,'Pork Chop Soup','pork,soup',
+	        		'Place pork chops, paprika, oregano, garlic powder, salt, pepper, chili powder, bay leaf, chicken broth, water, and soy sauce in a large stock pot. Bring to a boil, uncovered, then reduce heat to medium low and let simmer for 1 hour.', 20);
+	            insert into externalrecipes values(3,'Easy Grilled Chicken Teriyaki','chicken,grilled',
+	        		'Place chicken, teriyaki sauce, lemon juice, garlic, and sesame oil in a large resealable plastic bag. Seal bag, and shake to coat. Place in refrigerator for 24 hours, turning every so often. ', 30);
+	            insert into externalrecipes values(4,'Grilled Delmonico Steaks','grilled,steak',
+	        		'Combine the olive oil, Worcestershire sauce, soy sauce, garlic, onion, salt, pepper, rosemary, steak seasoning, and steak sauce in the container of a food processor or blender. Process until well blended.', 40);
+
+	        </sql>
+	</target>
+
+</project>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ClientCode folder="/Themes/css" name="logoCSS" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<url>/css/logo.css</url>
+<format>
+<link href="../../Settings/ContentTypes/css.xml" path="/Settings/ContentTypes/css"/>
+</format>
+</ClientCode>

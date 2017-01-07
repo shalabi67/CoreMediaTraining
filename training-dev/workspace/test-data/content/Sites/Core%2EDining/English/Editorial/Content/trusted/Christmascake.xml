@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/English/Editorial/Content/trusted" name="Christmascake" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Christmascake</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/trusted/topic.xml" path="/Sites/Core%2EDining/English/Navigation/trusted/topic"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Personal</p><p>This is a recipie from my grandmother. We always ate it on Sundays even in the summer, so we could have Christmas all year long. It’s just the best thing to eat at Christmas with your family..</p><p/><p class="p--heading-2">Content<br/></p><p>for 4 persons<br/></p><p class="p--heading-3"/><p class="MsoNormal"><span>125g warm butter</span></p><p class="MsoNormal"><span>150g sugar</span></p><p class="MsoNormal"><span>20g salt</span></p><p class="MsoNormal"><span>4 eggs</span></p><p class="MsoNormal"><span>100g flour</span></p><p class="MsoNormal"><span>40g baking powder</span></p><p class="MsoNormal"><span>125g chocolate</span></p><p class="MsoNormal"><span>150g hazelnuts</span></p><p class="MsoNormal"><span>100g oranges</span></p><p class="MsoNormal"><span> </span></p><p class="MsoNormal"><span>400g marzipan</span></p><p class="MsoNormal"><span>200g powdered sugar</span></p><p class="MsoNormal"><span>4 cl rum</span></p><p class="MsoNormal"><span> </span></p><p class="MsoNormal"><span>6 small bulbs</span></p><p class="MsoNormal"><span>200g vanilla</span></p><p class="MsoNormal"><span>4 tea-spoons of honey</span></p><p class="MsoNormal"><span>90g cocoa</span></p><p><br/></p><p class="p--heading-2">Management</p><p class="MsoNormal"><span>Preheat the oven at 175 degrees. Mix the butter with the sugar and the salt until it is foamy. Add the eggs one after one. Mix the Flour with the baking powder. When it is properly mixed just put it together and mix it up to a dough. Fill the dough into a heart-shaped form. After that just put it into the oven for 1 hour at 175 degrees. In the meantime pound the rum together with the powdered sugar and put it into the refrigerator. After the one hour the heart-shaped form should be cool down, so that the cake can be put on a plate. Brush the cake with the bulk from the refrigerator.</span></p></div></text>
+<image>
+<link href="../../Pictures/Cake.xml" path="/Sites/Core%2EDining/English/Editorial/Pictures/Cake"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

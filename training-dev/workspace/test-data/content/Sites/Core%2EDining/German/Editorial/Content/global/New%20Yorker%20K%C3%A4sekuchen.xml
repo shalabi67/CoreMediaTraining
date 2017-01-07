@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Editorial/Content/global" name="New Yorker Käsekuchen" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>New Yorker Käsekuchen</title>
+<keywords>zwiebeln, kassler, gruenkohl</keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/global/sweet/topic.xml" path="/Sites/Core%2EDining/German/Navigation/global/sweet/topic"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Persönliches</p><p>Es ist mir gelungen, dieses Rezept unter Einsatz aller meiner Kontakte dem Koch eines bekannten Frankfurter Restaurants zu entlocken..</p><p class="p--heading-2">Content<br/></p><p>für 4 Personen<br/></p><p class="p--heading-3"/><p class="p--heading-3">Quarkmasse</p><p>4 Eier<br/>400 g Zucker<br/>100 g Vanillezucker<br/>geriebene Schale von 2 Orangen und 1 Zitrone<br/>evtl. Vanilleschote<br/>1,2 kg Philadelphiakäse<br/>300 ml geschlagene Sahne<br/>12 Gelatineblättchen</p><p class="p--heading-3"><br/>Boden</p><p>Butterkekse, zerkrümelt (ca. eine Packung)<br/>175 g geschmolzene Butter<br/></p><p class="p--heading-2"/><p class="p--heading-2">Management</p><p>Zucker und Vanillezucker mit Eiern verrühren. Die geriebene Schale der Orangen und der Zitrone hinzugeben (evtl. auch das Mark einer Vanilleschote). Nach und nach den Philadelphiakäse hinzugeben. Schließlich die geschlagene Sahne unter die Masse heben. Butterkekse zerkrümeln. 2/3 der Krümel mit der geschmolzenen Butter verrühren. Die Masse auf den Boden einer eingefetteten Kuchenform verteilen und andrücken. Die Gelatineblättchen in einen Topf mit wenig Wasser legen und durch leichtes Anwärmen und Rühren auflösen lassen. Die Gelatineflüssigkeit unter die Quarkmasse heben. Das Ganze sofort in die Kuchenform geben. Die restlichen Kekskrümel über die Quarkmasse streuen. Den Kuchen über Nacht im Kühlschrank auskühlen lassen. Hinweis: Quarkmasse bei Zimmertemperatur anrühren, sonst klumpt die Gelatine. Tipp: Wenn der Rand der Kuchenform nicht hoch genug ist, kann man mit Backpapier einen provisorischen Rand basteln. Backpapier längs falten und vor dem Einfüllen der Quarkmasse an den Rand der Kuchenform legen.</p></div></text>
+<image>
+<link href="../../Pictures/schnaps.xml" path="/Sites/Core%2EDining/German/Editorial/Pictures/schnaps"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

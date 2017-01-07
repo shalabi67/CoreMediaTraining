@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/English/Navigation" name="related" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title></title>
+<keywords></keywords>
+<view>
+<link href="../../../../Settings/Viewtypes/Container/relatedTeasers.xml" path="/Settings/Viewtypes/Container/relatedTeasers"/>
+</view>
+<homeTopic>
+<link href="Core%2EDining%20English.xml" path="/Sites/Core%2EDining/English/Navigation/Core%2EDining%20English"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<contents>
+<link href="../Editorial/Content/ahead/Spicy%20Duck%20with%20Ravioli%20and%20Broccoli.xml" path="/Sites/Core%2EDining/English/Editorial/Content/ahead/Spicy%20Duck%20with%20Ravioli%20and%20Broccoli"/>
+</contents>
+</Container>

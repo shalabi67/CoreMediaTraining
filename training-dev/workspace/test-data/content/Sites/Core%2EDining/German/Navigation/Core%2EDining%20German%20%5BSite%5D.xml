@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Site folder="/Sites/Core.Dining/German/Navigation" name="Core.Dining German [Site]" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="master-version-destroyed">
+<title>de</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>de</locale>
+<master>
+<link href="../../English/Navigation/Core%2EDining%20English%20%5BSite%5D.xml" path="/Sites/Core%2EDining/English/Navigation/Core%2EDining%20English%20%5BSite%5D"/>
+</master>
+<masterVersion>0</masterVersion>
+<id>core.dining.de</id>
+<name>Core.Dining</name>
+<root>
+<link href="Core%2EDining%20German.xml" path="/Sites/Core%2EDining/German/Navigation/Core%2EDining%20German"/>
+</root>
+<siteManagerGroup></siteManagerGroup>
+</Site>

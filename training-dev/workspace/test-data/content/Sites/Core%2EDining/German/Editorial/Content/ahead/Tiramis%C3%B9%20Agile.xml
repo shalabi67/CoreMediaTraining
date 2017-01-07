@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Editorial/Content/ahead" name="Tiramisù Agile" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Vanilleeis mit Himbeer- Balsamico-Dressing</title>
+<keywords>zwiebeln, kassler, gruenkohl</keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/ahead/sweet/topic.xml" path="/Sites/Core%2EDining/German/Navigation/ahead/sweet/topic"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Persönliches</p><p>Estragoneis war mir vom Besuch bei Freunden bekannt – die Kreation mit Himbeeren ist eine „Eigenschöpfung“, die in Zusammenarbeit mit meinem Mann beim Aufräumen des Gefrierschranks entstanden ist. Wir „fanden“ Vanilleeis, TK-Himbeeren – und der Estragon wuchs auf unserem Balkon.</p><p class="p--heading-2">Content<br/></p><p>für 4 Personen</p><p><br/>1 Schale Himbeeren oder TK-Himbeeren (ca. 200-250 g)<br/>6 TL Himbeermarmelade<br/>5 TL Balsamico<br/>2 TL Estragon (geht auch gefriergetrocknet!)<br/>cremiges Vanilleeis für 4 Personen</p><p/><p class="p--heading-2">Management</p><p>Frische Himbeeren in einer Schale mit Zucker Saft ziehen lassen/TK-Himbeeren in einer Schale auftauen lassen. Himbeermarmelade, Balsamico und Estragon mit dem Saft der Himbeeren gut verrühren. Vanilleeis in Schalen, mit Himbeeren und Dressing garniert, servieren und sich auf erstaunte Gäste freuen!</p></div></text>
+<image>
+<link href="../../Pictures/schnaps.xml" path="/Sites/Core%2EDining/German/Editorial/Pictures/schnaps"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

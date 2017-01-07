@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PageLayout folder="/Themes" name="BeansPageLayout" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<clientCodes>
+<link href="css/beanBackgroundCSS.xml" path="/Themes/css/beanBackgroundCSS"/>
+<link href="css/contentCSS.xml" path="/Themes/css/contentCSS"/>
+<link href="css/structureCSS.xml" path="/Themes/css/structureCSS"/>
+<link href="css/navigationCSS.xml" path="/Themes/css/navigationCSS"/>
+<link href="css/breadcrumbCSS.xml" path="/Themes/css/breadcrumbCSS"/>
+<link href="css/commonCSS.xml" path="/Themes/css/commonCSS"/>
+<link href="css/logoCSS.xml" path="/Themes/css/logoCSS"/>
+<link href="css/relatedCSS.xml" path="/Themes/css/relatedCSS"/>
+<link href="css/titleCSS.xml" path="/Themes/css/titleCSS"/>
+<link href="css/customCSS.xml" path="/Themes/css/customCSS"/>
+</clientCodes>
+</PageLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/English/Navigation/global" name="intro" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title></title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="topic.xml" path="/Sites/Core%2EDining/English/Navigation/global/topic"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Delicious meals often come from far away. Find out about the full range of spices, fruits and vegetables.</p></div></text>
+<image>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

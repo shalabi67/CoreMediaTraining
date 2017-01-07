@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2009/documenttypes"
+				   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+				   Root="Base"
+                   Name="coredining-doctypes"
+                   Title="Core.Dining Doctypes">
+ 
+  <ImportGrammar Name="coremedia-richtext-1.0" From="required-doctypes"/>
+  <ImportGrammar Name="coremedia-struct-2008" From="required-doctypes"/>
+
+  <DocType Name="Base" Abstract="true" />
+  
+  <DocType Name="Linkable" Abstract="true" Parent="Base">
+    <StringProperty Length="100" Name="title" extensions:translatable="true"/>
+    <StringProperty Length="150" Name="keywords" extensions:translatable="true"/>
+    <LinkListProperty LinkType="Symbol" Name="view"/>
+    <LinkListProperty LinkType="Topic" Name="homeTopic"/>
+	<!-- localization support -->
+	<StringProperty Name="locale" Length="64"/>
+    <LinkListProperty Name="master" Max="1" LinkType="Linkable" extensions:weakLink="true"/>
+    <IntProperty Name="masterVersion"/>
+  </DocType>
+  
+  <DocType Name="Article" Parent="Linkable">
+    <XmlProperty Grammar="coremedia-richtext-1.0" Name="text" extensions:translatable="true"/>
+    <LinkListProperty LinkType="Image" Name="image" Max="1" />
+    <LinkListProperty LinkType="Linkable" Name="related"/>
+    <IntProperty Name="teaserLength"/>
+    <DateProperty Name="autoPublish"/>
+    <DateProperty Name="autoDelete"/>
+	<!-- localization support -->
+    <LinkListProperty Name="master" Max="1" LinkType="Article" Override="true" extensions:weakLink="true"/>
+  </DocType>
+  
+  <DocType Name="Image" Parent="Linkable">
+    <BlobProperty MimeType="image/*" Name="data"/>
+    <StringProperty Length="100" Name="caption" extensions:translatable="true"/>
+	<!-- localization support -->
+    <LinkListProperty Name="master" Max="1" LinkType="Image" Override="true" extensions:weakLink="true"/>
+  </DocType>
+  
+  <DocType Name="Site" Parent="Linkable">
+    <StringProperty Name="id" Length="32"/>
+    <StringProperty Name="name" Length="64"/>
+    <LinkListProperty Name="root" LinkType="Topic" Max="1"/>
+    <StringProperty Name="siteManagerGroup" Length="64"/>
+	<!-- localization support -->
+    <LinkListProperty Name="master" Max="1" LinkType="Site" Override="true" extensions:weakLink="true"/>
+  </DocType>
+  
+  <DocType Name="Topic" Parent="Linkable">
+    <LinkListProperty LinkType="Topic" Name="subTopics"/>
+    <LinkListProperty LinkType="PageLayout" Name="pageLayout"/>
+    <LinkListProperty LinkType="Container" Name="relatedContainers"/>
+    <LinkListProperty LinkType="Container" Name="contentContainers"/>
+	<!-- localization support -->
+    <LinkListProperty Name="master" Max="1" LinkType="Topic" Override="true" extensions:weakLink="true"/>
+  </DocType>
+  
+  <DocType Name="Container" Parent="Linkable">
+    <LinkListProperty LinkType="Linkable" Name="contents"/>
+	<!-- localization support -->
+    <LinkListProperty Name="master" Max="1" LinkType="Container" Override="true" extensions:weakLink="true"/>
+  </DocType>
+  
+  <DocType Name="PageLayout" Parent="Base">
+    <LinkListProperty LinkType="ClientCode" Name="clientCodes"/>
+  </DocType>
+  
+  <DocType Name="Symbol" Parent="Base">
+    <StringProperty Length="100" Name="description"/>
+  </DocType>
+  
+  <DocType Name="ClientCode" Parent="Base">
+    <StringProperty Length="300" Name="url"/>
+    <BlobProperty MimeType="text/*" Name="raw"/>
+    <LinkListProperty LinkType="Symbol" Name="format"/>
+  </DocType>
+  
+</DocumentTypeModel>

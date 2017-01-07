@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.training.coredining</groupId>
+    <artifactId>server</artifactId>
+    <version>7.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>user-changes-webapp</artifactId>
+  <packaging>war</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>sitemodel</artifactId>
+      <version>${project.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.collaboration</groupId>
+      <artifactId>user-changes-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>user-changes</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <configuration>
+          <port>41085</port>
+          <warSourceDirectory>src/main/webapp</warSourceDirectory>
+          <path>/</path>
+          <systemProperties>
+            <catalina.base>${project.build.directory}</catalina.base>
+            <resourcePath.base>${project.basedir}</resourcePath.base>
+            <coremedia.application.repository.url>http://${cms.host}:${CMS_PORT_PREFIX}${HTTP_PORT_SUFFIX}/coremedia/ior</coremedia.application.repository.url>
+            <coremedia.application.repository.user>webserver</coremedia.application.repository.user>
+            <coremedia.application.repository.password>webserver</coremedia.application.repository.password>
+            <coremedia.logging.directory>${project.build.directory}/logs</coremedia.logging.directory>
+          </systemProperties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>db2</id>
+      <dependencies>
+        <!-- use DB2 JDBC storage for Studio Control Room features instead of Elastic Core and MongoDB -->
+        <dependency>
+          <groupId>com.coremedia.cms</groupId>
+          <artifactId>cap-client-list-jdbc</artifactId>
+          <scope>runtime</scope>
+        </dependency>
+        <dependency>
+          <groupId>com.coremedia.ui.collaboration</groupId>
+          <artifactId>user-changes-component</artifactId>
+          <scope>runtime</scope>
+          <exclusions>
+            <exclusion>
+              <groupId>com.coremedia.cms</groupId>
+              <artifactId>cap-client-list-elastic</artifactId>
+            </exclusion>
+          </exclusions>
+        </dependency>
+        <dependency>
+          <groupId>com.ibm</groupId>
+          <artifactId>db2jcc4</artifactId>
+          <scope>runtime</scope>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>
+
+</project>

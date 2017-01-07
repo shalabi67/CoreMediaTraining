@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Editorial/Content/ahead" name="Wodkanudeln" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Wodkanudeln</title>
+<keywords>zwiebeln, kassler, gruenkohl</keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/ahead/savoury/topic.xml" path="/Sites/Core%2EDining/German/Navigation/ahead/savoury/topic"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Persönliches</p><p>Funktioniert bestens, wenn es schnell gehen muss und nichts anbrennen darf. Zum Beispiel bei unerwartetem, aber sehr wohl erwünschten Besuch, einer Überraschungsparty oder bei einem spontanen Rendezvous.</p><p class="p--heading-2">Content<br/></p><p>für ca. 2-4 Personen</p><p><br/>ein wenig Butter<br/>1 kleine Dose Tomatenmark<br/>2 Pfefferschoten (scharf)<br/>1 Dose Sahne<br/>1 TL Weinbrand<br/>1 Schnapsglas Wodka<br/>1 Prise Salz<br/>Pasta und Parmesankäse</p><p><br/></p><p class="p--heading-2">Management</p><p>Pasta in den Topf geben und kochen. Währenddessen Pfefferschoten in der Butter anbraten – am besten in einem kleinen Topf. Tomatenmark hinzufügen, damit es etwas mitbrutzeln kann. Nach ca. 20 Sekunden kommt die Sahne dazu und darf sich mit dem Tomatenmark zu einer schönen hellroten Soße verbinden. Doch viel wichtiger ist natürlich der Wodka. Der kommt zusammen mit Sherry oder Weinbrand und einer Prise Salz gleich nach der Sahne in den Topf. Abschmecken. Vielleicht noch etwas Wodka – je nach Lust und Laune – hinzufügen und fertig ist die Wodkasoße. Die schüttet ihr über die abgetropfte Pasta, verrührt das Ganze und bietet leckeren selbst geriebenen Parmesankäse dazu an.</p></div></text>
+<image>
+<link href="../../Pictures/Soeren.xml" path="/Sites/Core%2EDining/German/Editorial/Pictures/Soeren"/>
+</image>
+<related>
+<link href="Partyspaghetti.xml" path="/Sites/Core%2EDining/German/Editorial/Content/ahead/Partyspaghetti"/>
+<link href="../global/Cool%20Cow.xml" path="/Sites/Core%2EDining/German/Editorial/Content/global/Cool%20Cow"/>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

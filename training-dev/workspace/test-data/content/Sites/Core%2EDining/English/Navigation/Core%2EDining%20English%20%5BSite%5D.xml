@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Site folder="/Sites/Core.Dining/English/Navigation" name="Core.Dining English [Site]" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>en</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<masterVersion>0</masterVersion>
+<id>core.dining.en</id>
+<name>Core.Dining</name>
+<root>
+<link href="Core%2EDining%20English.xml" path="/Sites/Core%2EDining/English/Navigation/Core%2EDining%20English"/>
+</root>
+<siteManagerGroup>chief editor</siteManagerGroup>
+</Site>

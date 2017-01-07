@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Topic folder="/Sites/Core.Dining/German/Navigation/ahead/savoury" name="topic" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="not-localized-yet">
+<title>savoury</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>de</locale>
+<master>
+<link href="../../../../English/Navigation/ahead/savoury/topic.xml" path="/Sites/Core%2EDining/English/Navigation/ahead/savoury/topic"/>
+</master>
+<subTopics>
+</subTopics>
+<pageLayout>
+</pageLayout>
+<relatedContainers>
+</relatedContainers>
+<contentContainers>
+<link href="content.xml" path="/Sites/Core%2EDining/German/Navigation/ahead/savoury/content"/>
+</contentContainers>
+</Topic>

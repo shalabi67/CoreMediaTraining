@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/English/Navigation/ahead" name="introContainer" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Off to Pastures New!</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<contents>
+<link href="intro.xml" path="/Sites/Core%2EDining/English/Navigation/ahead/intro"/>
+</contents>
+</Container>

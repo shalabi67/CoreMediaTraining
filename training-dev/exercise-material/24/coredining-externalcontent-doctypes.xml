@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2009/documenttypes"
+                   Name="coredining-externalcontent-doctypes"
+                   Title="Core.Dining External Content Doctypes">
+ 
+  <ImportDocType Name="Article" From="coredining-doctypes"/>
+  
+  <DocType Name="ExternalArticle" Parent="Article">
+    <StringProperty Name="externalId" Length="20" />
+  </DocType>
+  
+</DocumentTypeModel>

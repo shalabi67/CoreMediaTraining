@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Container folder="/Sites/Core.Dining/English/Navigation/global" name="content" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title></title>
+<keywords></keywords>
+<view>
+<link href="../../../../../Settings/Viewtypes/Container/tableOfTeasers.xml" path="/Settings/Viewtypes/Container/tableOfTeasers"/>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<contents>
+<link href="../../Editorial/Content/global/Hanseatic%20Chicken%20Foot%20Soup.xml" path="/Sites/Core%2EDining/English/Editorial/Content/global/Hanseatic%20Chicken%20Foot%20Soup"/>
+<link href="../../Editorial/Content/global/Chocolate%20Lebkuchen.xml" path="/Sites/Core%2EDining/English/Editorial/Content/global/Chocolate%20Lebkuchen"/>
+<link href="../../Editorial/Content/global/Sheperd%27s%20Pie.xml" path="/Sites/Core%2EDining/English/Editorial/Content/global/Sheperd%27s%20Pie"/>
+</contents>
+</Container>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Editorial/Content/global" name="Cool Cow" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Cool Cow</title>
+<keywords>knoblauch</keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/global/savoury/topic.xml" path="/Sites/Core%2EDining/German/Navigation/global/savoury/topic"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Persönliches</p><p>Das allererste Mal habe ich Freunde zum Essen zu mir nach Hause eingeladen und beschlossen, etwas Leckeres und Anspruchsvolles zu kochen. Es ist einiges schief gelaufen: Die Vorspeise wollte nicht so, wie ich wollte. Wir haben uns die Zähne ausgebissen, weil das Fleisch sehr zäh geworden ist. Nur das gekaufte Dessert entsprach unseren Vorstellungen. Heute übe ich in privater Runde mit meinem Freund und wir merken jedes Mal eine Verbesserung; es schmeckt uns sogar fast so gut wie im Restaurant! Meinen Freunden serviere ich aber nur noch Hühnchen oder Pizza, denn die Gesichter möchte ich meinem Freund und mir ersparen.</p><p class="p--heading-2">Content<br/></p><p>für ca. 2-4 Personen<br/></p><p class="p--heading-3"/><p class="p--heading-3">Rindermedaillons</p><p>4 Rindermedaillons à 180 g<br/>50 g Butterschmalz<br/>2 Knoblauchzehen<br/>1 Prise Salz und Pfeffer<br/>je1 Zweig Thymian und Rosmarin<br/></p><p class="p--heading-3">Soße</p><p>Je 1 EL Butter und Schmand<br/>50 g Zucker<br/>125 ml Fleischbrühe<br/>1 Prise Salz und Pfeffer</p><p><br/></p><p class="p--heading-2">Management</p><p>Die Rindermedaillons waschen und anschließend mit Küchenpapier trocken tupfen. Eventuell vorhandene Sehnen entfernen. Jetzt das Fleisch mit Salz und Pfeffer würzen und in runde Medaillons schneiden. Die Knoblauchzehen schälen und in grobe Stücke schneiden. Das Butterschmalz in einer Pfanne erhitzen und die Medaillons dazugeben. Am besten schmecken sie, wenn sie medium gebraten sind.</p><p/><p>Nun Rosmarin, Thymian und Knoblauch in die Pfanne geben, damit das Fleisch das Aroma der Kräuter annimmt. Ran an die Soße! Zuerst die Butter in einer Pfanne warm machen. Jetzt den Zucker hinzufügen und das Ganze karamellisieren lassen. Ist der Zucker leicht gebräunt, wird die Soße mit der Fleischbrühe abgelöscht. Zum Schluss noch den Schmand hinzufügen und alles mit Salz und Pfeffer würzen. Dazu empfehle ich Kartoffelpüree!</p></div></text>
+<image>
+<link href="../../Pictures/Knoblauch.xml" path="/Sites/Core%2EDining/German/Editorial/Pictures/Knoblauch"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

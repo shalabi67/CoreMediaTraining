@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Topic folder="/Sites/Core.Dining/English/Navigation/global" name="topic" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>global</title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<subTopics>
+<link href="savoury/topic.xml" path="/Sites/Core%2EDining/English/Navigation/global/savoury/topic"/>
+<link href="sweet/topic.xml" path="/Sites/Core%2EDining/English/Navigation/global/sweet/topic"/>
+</subTopics>
+<pageLayout>
+<link href="../../../../../Themes/BananaPageLayout.xml" path="/Themes/BananaPageLayout"/>
+</pageLayout>
+<relatedContainers>
+</relatedContainers>
+<contentContainers>
+<link href="introContainer.xml" path="/Sites/Core%2EDining/English/Navigation/global/introContainer"/>
+<link href="content.xml" path="/Sites/Core%2EDining/English/Navigation/global/content"/>
+</contentContainers>
+</Topic>

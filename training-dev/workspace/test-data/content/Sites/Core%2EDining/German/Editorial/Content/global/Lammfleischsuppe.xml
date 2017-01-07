@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Editorial/Content/global" name="Lammfleischsuppe" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Lammfleischsuppe mit Zimt</title>
+<keywords>zwiebeln, kassler, gruenkohl</keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/global/savoury/topic.xml" path="/Sites/Core%2EDining/German/Navigation/global/savoury/topic"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Persönliches</p><p>Dieses Rezept habe ich von einem ehemaligen Kollegen und Feinschmecker, der sich vorgenommen hatte, sein Körpergewicht zu reduzieren. Nach einem Jahr hatte er mit Hilfe von Sport und einer Diät sein Ziel erreicht. Zur Feier seines Erfolges lud er uns zu dieser außergewöhnlichen Lammsuppe ein.</p><p class="p--heading-2">Content<br/></p><p>für 4 Personen<br/></p><p class="p--heading-3"/><p>250 g mageres Lammfleisch<br/>3 große Tomaten<br/>2 Zwiebeln<br/>1 Bund Petersilie<br/>2 EL Olivenöl<br/>1 TL Ingwerpulver<br/>2 Messerspitzen gemahlene Kurkuma<br/>1 TL Salz<br/>1 TL schwarzer Pfeffer<br/>1 l heiße Fleischbrühe<br/>2 Eier<br/>2 TL Zitronensaft<br/>1 Messerspitze gemahlener Zimt</p><p><br/></p><p class="p--heading-2">Management</p><p>Das Fleisch waschen, trocken tupfen und in dünne, etwa 3 cm lange Streifen schneiden. Die Tomaten häuten und in Stücke schneiden; dabei die Kerne entfernen. Die Zwiebel schälen und fein würfeln. Die Petersilie waschen, abtropfen lassen und hacken. Das Öl in einem Topf erhitzen, Fleisch zufügen und unter Wenden anbraten. Den Ingwer und die Kurkuma unterrühren. Die Tomaten, die Zwiebeln, die Petersilie, das Salz und den Pfeffer zufügen, umrühren und mit der heißen Fleischbrühe auffüllen. Die Suppe 45 Minuten zugedeckt bei milder Hitze kochen lassen. Den Topf vom Herd nehmen. Die Eier mit dem Zitronensaft und dem Zimt verquirlen und in die Suppe rühren.</p></div></text>
+<image>
+<link href="../../Pictures/Paprika.xml" path="/Sites/Core%2EDining/German/Editorial/Pictures/Paprika"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

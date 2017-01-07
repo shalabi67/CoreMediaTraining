@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exml:component xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                xmlns="exml:ext.config"
+                xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                xmlns:ui="exml:com.coremedia.ui.config"
+                xmlns:coredining="exml:com.coremedia.coredining.studio.config"
+                baseClass="com.coremedia.coredining.studio.field.LinkPropertyFieldBase">
+  <exml:import class="com.coremedia.cms.editor.Editor_properties" />
+  <exml:import class="com.coremedia.cms.editor.sdk.util.ContentLocalizationUtil" />
+  <exml:import class="com.coremedia.cms.editor.sdk.util.ContentLifecycleUtil" />
+  <exml:import class="com.coremedia.ui.data.ValueExpressionFactory" />
+  <exml:cfg name="bindTo" type="com.coremedia.ui.data.ValueExpression" />
+  <exml:cfg name="propertyName" type="String" />
+  <container
+      cls="x-form-item"
+      labelSeparator=""
+      layout="form">
+    <items>
+      <panel>
+        <items>
+          <editor:singleLinkField autoExpandColumn="path">
+            <plugins>
+              <ui:bindListPlugin bindTo="{getLinkListPropertyExpression()}">
+                <ui:fields>
+                  <ui:dataField name="typeCls"
+                                mapping="type"
+                                convert="{ContentLocalizationUtil.getIconStyleClassForContentType}"
+                                ifError=""
+                                ifUnreadable="cm-no-rights-name" />
+                  <ui:dataField name="path"
+                                mapping="path"
+                                ifError=""
+                                ifUnreadable=""/>
+                  <ui:dataField name="status"
+                                mapping=""
+                                convert="{ContentLifecycleUtil.getDetailedLifecycleStatus}"
+                                ifError=""
+                                ifUnreadable="" />
+                </ui:fields>
+              </ui:bindListPlugin>
+              <editor:linkDropTargetPlugin valueExpression="{getLinkListPropertyExpression()}" />
+              <editor:resourceContextMenuPlugin>
+                <editor:menu>
+                  <editor:propertyFieldContextMenu />
+                </editor:menu>
+              </editor:resourceContextMenuPlugin>
+            </plugins>
+            <columns>
+              <editor:typeIconColumn />
+              <gridcolumn id="path" dataIndex="path" />
+              <editor:statusColumn />
+            </columns>
+          </editor:singleLinkField>
+        </items>
+        <tbar>
+          <toolbar cls="custom-toolbar-xs">
+            <items>
+              <ui:iconButton itemId="delete" handler="{removeLink}" iconCls="remove-icon">
+                <plugins>
+                  <coredining:disableWhenEmptyPlugin listValueExpression="{getLinkListPropertyExpression()}"/>
+                </plugins>
+              </ui:iconButton>
+              <ui:iconButton itemId="openInTab">
+                <baseAction>
+                  <editor:openInTabAction itemId="openInTab"
+                                          contentValueExpression="{ValueExpressionFactory.createSingleItemValueExpression(getLinkListPropertyExpression())}" />
+                </baseAction>
+              </ui:iconButton>
+            </items>
+          </toolbar>
+        </tbar>
+      </panel>
+    </items>
+	<plugins>
+	  <editor:setPropertyLabelPlugin labelProperty="text"
+									 propertyName="{config.propertyName}"
+									 bindTo="{config.bindTo}" />
+	</plugins>
+  </container>
+</exml:component>

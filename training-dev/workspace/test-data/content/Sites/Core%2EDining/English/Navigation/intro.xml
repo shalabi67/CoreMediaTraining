@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/English/Navigation" name="intro" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title></title>
+<keywords></keywords>
+<view>
+</view>
+<homeTopic>
+<link href="Core%2EDining%20English.xml" path="/Sites/Core%2EDining/English/Navigation/Core%2EDining%20English"/>
+</homeTopic>
+<locale>en</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Dear friends! Do you know the feeling when a common goal has been reached? Then it is the time for a great meal. We have a collection of recipies divided into the sections trusted©, global© and ahead©. In trusted© you will find recipes coming from Germany while the global© has a more international flavour. Trying a recipe from the ahead© requires a little portion of courage. </p><p/><p>Have fun and try them out!</p></div></text>
+<image>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

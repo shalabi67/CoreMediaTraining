@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Article folder="/Sites/Core.Dining/German/Editorial/Content/trusted" name="Zwiebelkuchen" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<title>Zwiebelkuchen</title>
+<keywords>zwiebeln, speck</keywords>
+<view>
+</view>
+<homeTopic>
+<link href="../../../Navigation/trusted/topic.xml" path="/Sites/Core%2EDining/German/Navigation/trusted/topic"/>
+</homeTopic>
+<locale>de</locale>
+<master>
+</master>
+<text grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">Content</p><p class="p--standard">für 4 Personen</p><p class="p--standard">Teig für 2 Bleche</p><p class="p--standard">750 g Mehl<br/>Hefe (2 Trockenbeutel oder 1 frischen)<br/>50 ml Olivenöl<br/>400 ml lauwarme Milch<br/>Salz nach Geschmack<br/>weniger als eine Prise Zucker</p><p class="p--standard">Belag<br/>ca. 3 Kilo Zwiebeln<br/>1 Bund Frühlingszwiebeln<br/>400 g Speck<br/>300 g Crème fraîche<br/>6 Eier<br/>400 g herzhaften Käse (Emmentaler oder mittelalten Gouda)<br/>Salz, Pfeffer, Muskat</p><p class="p--heading-1">Management</p><p class="p--standard">Zwiebeln und Speck anbraten – Crème fraîche, Eier, Käse (gerieben) mischen. Zwiebeln und Speck hinzufügen, mit Salz, Pfeffer und Muskat abschmecken. Teig eine halbe Stunde gehen lassen, danach auf zwei Bleche verteilen. Den Belag auf fertigen Teig verteilen. 35 Minuten backen bei 200 °C (mit Umluftherd bei 180 °C).</p></div></text>
+<image>
+<link href="../../Pictures/Consuelo.xml" path="/Sites/Core%2EDining/German/Editorial/Pictures/Consuelo"/>
+</image>
+<related>
+</related>
+<teaserLength>-1</teaserLength>
+</Article>

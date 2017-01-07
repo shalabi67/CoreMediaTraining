@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <context:annotation-config/>
+  
+  <import resource="classpath:/com/coremedia/cae/handler-services.xml"/>
+	
+	<!-- === HANDLERS === -->
+  
+  <!-- add your handler beans here... -->
+
+  <bean id="contentViewHandler" class="com.coremedia.coredining.handlers.ContentViewHandler" >
+    <description>
+      Default handler for understanding ContentBean URLs.
+      Patterns: /content/220
+                /content/220?view=pdf
+    </description>
+  </bean>
+
+  <bean id="contentBlobViewHandler" class="com.coremedia.coredining.handlers.ContentBlobViewHandler">
+    <description>
+      Default handler for understanding ContentBlob URLs.
+      Pattern: /contentblob/56/data/{etag}
+    </description>
+    <property name="contentRepository" ref="contentRepository" />
+  </bean>
+
+  <bean id="baseUriPrepender" class="com.coremedia.coredining.handlers.BaseUriPrepender">
+    <description>
+      LinkPostProcessor for prepending the base URI "/coredining".
+    </description>
+  </bean>
+  
+  <bean id="contentViewLinkHandler" class="com.coremedia.coredining.handlers.ContentViewLinkHandler">
+  	<description>
+  	  The Link-Handler for generating URLS of pattern "/content/220?view=pdf". This is the link creating
+  	  counterpart of the "contentViewHandler".
+  	</description>
+  </bean>
+  
+  
+  <!-- === CONVERTERS === -->
+  
+  <!-- 
+  	Spring converters are used to convert the String of a @PathVariable to the type of the 
+  	handler method parameter. 
+  	
+  	A pre-defined IdContentBeanConverter converts numeric ID Strings (e.g. "220") 
+  	to ContentBeans.
+  	
+  	To register custom converters globally in the application context, add them to the following 
+  	customizer.
+ 		-->
+
+ 	<customize:append id="corediningBindingConverterCustomizer" bean="bindingConverters">
+ 		<set>
+ 			<ref bean="idGenericContentBeanConverter" />	
+ 		</set>
+ 	</customize:append>
+  
+</beans>

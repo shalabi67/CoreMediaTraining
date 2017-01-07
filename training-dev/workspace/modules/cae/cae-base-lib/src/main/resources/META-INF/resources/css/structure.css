@@ -1,0 +1,76 @@
+div#page {
+  position:absolute;
+  left:50px;
+  top:50px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+div#titleBarTop {
+  position:absolute;
+  left: 160px;
+  top:20px;
+  height: 30px;
+  width: 1690px;
+}
+
+div#titleBarLeft {
+  position:absolute;
+  left: -50px;
+  top:20px;
+  height: 30px;
+  width: 50px;
+}
+
+div#titleBarMid {
+  position:absolute;
+  left: 0px;
+}
+
+div#titleBar {
+  position:absolute;
+  left: -50px;
+  top:50px;
+  height: 40px;
+  width: 1900px;
+}
+
+div#logo {
+  position:absolute;
+  left:0px;
+  top:-20px;
+}
+
+div#title {
+  position:absolute;
+  left:16px;
+  top:8px;
+}
+
+div#breadcrumb {
+  position:absolute;
+  top: 16px;
+  left:226px;
+  width:400px;
+
+}
+
+div#nav {
+  position:absolute;
+  left:0px;
+  top:91px;
+}
+
+div#content {
+  position:absolute;
+  left:176px;
+  top:100px;
+
+  width: 600px; 
+}
+
+div#rel {
+  position:absolute;
+  left:792px;
+  top:100px;
+}
