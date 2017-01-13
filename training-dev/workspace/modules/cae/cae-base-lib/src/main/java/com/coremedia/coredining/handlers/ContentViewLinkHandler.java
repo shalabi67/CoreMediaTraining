@@ -15,9 +15,6 @@ import com.coremedia.objectserver.web.links.Link;
  * In a typical handler implementation both link-building and request-handling methods would be placed in 
  * a single class. Unfortunately this would not allow to replace the request-handling method in a custom
  * handler without replacing the link-building method too.
- * 
- * @author mbuse
- *
  */
 @Link
 public class ContentViewLinkHandler {

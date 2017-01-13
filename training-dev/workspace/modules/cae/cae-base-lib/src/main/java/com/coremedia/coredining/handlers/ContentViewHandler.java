@@ -12,7 +12,9 @@ import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
 /**
- * Created by mbuse on 17.02.2015.
+ * The default handler for content URLs.
+ *
+ * Supports URLS like '/content/22' and '/content/22?view=pdf'.
  */
 
 @RequestMapping

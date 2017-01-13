@@ -17,7 +17,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="cae-base-component" scope="RUNTIME" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.training.coredining:cae-base-component:7.1-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.cms:base-component:7.1.5-10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.cms:logging-component:7.1.5-10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: ch.qos.logback:logback-core:1.1.0" level="project" />
@@ -36,12 +36,12 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.json:json:20131018" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.glassfish.web:jstl-impl:1.2" level="project" />
-    <orderEntry type="module" module-name="contentbeans" scope="RUNTIME" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.training.coredining:contentbeans:7.1-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.cms:cap-contentbean-aspect:7.1.5-10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.cms:coremedia-transform:7.1.5-10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.mortennobel:java-image-scaling:0.8.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.jhlabs:filters:2.0.235-1" level="project" />
-    <orderEntry type="module" module-name="cae-base-lib" scope="RUNTIME" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.training.coredining:cae-base-lib:7.1-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.coremedia.cms:cae-contentbeanservices-impl:7.1.5-10" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: asm:asm:3.3.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: cglib:cglib:2.2.2" level="project" />
