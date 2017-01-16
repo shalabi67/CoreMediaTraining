@@ -11,4 +11,8 @@ public class LinkableImpl extends AbstractContentBean implements Linkable {
 		return getContent().getString("title");
 	}
 
+	public String getText() {
+		return "This is text property.";
+	}
+
 }

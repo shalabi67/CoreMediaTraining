@@ -18,7 +18,10 @@
 </head>
 
 <body>
+Hello, This is shalabi
+<br />
 <h1>This page displays content of ${self.title}</h1>
+<h2>${self.text}</h2>
 </body>
 
 </html>
