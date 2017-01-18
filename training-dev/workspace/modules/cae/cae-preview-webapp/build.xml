@@ -2,7 +2,8 @@
 <project name="exercise-tools" basedir="." default="noops">
 	<property environment="env"/>
 
-	<property name="maven.executable" location="${env.M2_HOME}/bin/mvn.bat" />
+	<!--<property name="maven.executable" location="${env.M2_HOME}/bin/mvn.bat" />-->
+	<property name="maven.executable" location="${env.M2_HOME}/bin/mvn" />
 	<property name="doctypes.xml" location="../../server/contentserver-component/src/main/resources/framework/doctypes/coredining/coredining-doctypes.xml" />
 	
 	<property name="cae.dir" location="${basedir}/.." />
@@ -18,7 +19,7 @@
 	<target name="generate-content-beans" description="Exercise 4: generate content beans">
 		<java classname="com.coremedia.objectserver.beans.codegen.impl.BeanGenerator" fork="true">
 			<classpath refid="coredining.classpath"/>
-			<arg line='-o src/main/java -p com.coremedia.coredining.contentbeans -d ${doctypes.xml} -generics'/>
+			<arg line='-o src/main/java -p com.coremedia.coredining.contentbeans -d ${doctypes.xml} -generics -beanmapping src/main/resources/framework/spring/shalabi-cotentbeans.xml'/>
 		</java>
 	</target>
 	

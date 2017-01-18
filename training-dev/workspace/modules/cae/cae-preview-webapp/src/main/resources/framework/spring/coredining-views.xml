@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/view-services.xml"/>
+
+  <!-- Add your programmed views here... -->
+	
+  <customize:append id="corediningProgrammedViewsCustomizer" bean="programmedViews">
+    <description>
+      append your programmed views here. By default the map is empty.
+    </description>
+    <map>
+    	<!--
+       | Register your programmed views here e.g.
+       | <entry key="com.coremedia.xml.Markup#plain" value-ref="plainMarkupView"/>
+       -->
+    </map>
+  </customize:append>
+
+
+  <customize:append id="corediningTemplateLocationsCustomizer" bean="templateLocations">
+    <description>
+      append your template locations here. By default /WEB-INF/templates will be scanned.
+    </description>
+    <map>
+      <!--
+       | Add your template locations here e.g.
+       | <entry key="myTemplates" value="/WEB-INF/other-templates"/>
+       -->
+    </map>
+  </customize:append>
+  
+  <customize:append id="corediningRenderNodeDecoratorProvidersCustomizer" bean="renderNodeDecoratorProviders">
+    <description>
+      append your custom RenderNodeDecoratorProviders here. By default the list is empty.
+    </description>
+    <list>
+      <!-- Add your custom RenderNodeDecoratorProviders here -->
+    </list>
+  </customize:append>
+  
+</beans>

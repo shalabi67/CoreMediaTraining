@@ -1,0 +1,16 @@
+div#related {
+  height: auto;
+  width: 160px;
+}
+
+div#relTail[id] {
+  background-image: url(../img/w2tran48x1.png);
+}
+
+div#relTail {
+  background-repeat: repeat-x;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale src='../img/w2tran48x1.png');
+  width: 160px;
+  height: 32px;
+}
+
