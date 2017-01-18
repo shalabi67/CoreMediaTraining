@@ -1,18 +1,16 @@
 package com.coremedia.coredining.contentbeans;
 
-import com.coremedia.objectserver.beans.AbstractContentBean;
+import com.coremedia.coredining.contentbeans.Linkable;
+import com.coremedia.coredining.contentbeans.LinkableBase;
 
-public class LinkableImpl extends AbstractContentBean implements Linkable {
+/**
+ *  Generated extension class for beans of document type "Linkable".
+ */
+public class LinkableImpl extends LinkableBase implements Linkable  {
 
-	/* (non-Javadoc)
-	 * @see com.coremedia.corebase.contentbeans.Linkable#getTitle()
-	 */
-	public String getTitle() {
-		return getContent().getString("title");
-	}
-
-	public String getText() {
-		return "This is text property.";
-	}
-
+  /*
+   * DEVELOPER NOTE
+   * You are invited to change this class by adding additional methods here.
+   * Add them to the interface {@link com.coremedia.coredining.contentbeans.Linkable} to make them public.
+   */
 }

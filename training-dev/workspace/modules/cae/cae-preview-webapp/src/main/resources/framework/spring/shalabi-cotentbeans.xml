@@ -1,0 +1,57 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+  <description>
+    Generated content bean mappings.
+  </description>
+
+  <bean name="abstractContentBean" scope="prototype" abstract="true">
+    <!--
+    <property name="additionalService" ref="additionalService"/>
+    -->
+  </bean>
+
+  <bean name="contentBeanFactory:Article" class="com.coremedia.coredining.contentbeans.ArticleImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Article'</description>
+  </bean>
+
+  <!-- type 'Base' is abstract 
+  <bean name="contentBeanFactory:Base" class="com.coremedia.coredining.contentbeans.BaseImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Base'</description>
+  </bean>
+  -->
+
+  <bean name="contentBeanFactory:ClientCode" class="com.coremedia.coredining.contentbeans.ClientCodeImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'ClientCode'</description>
+  </bean>
+
+  <bean name="contentBeanFactory:Container" class="com.coremedia.coredining.contentbeans.ContainerImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Container'</description>
+  </bean>
+
+  <bean name="contentBeanFactory:Image" class="com.coremedia.coredining.contentbeans.ImageImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Image'</description>
+  </bean>
+
+  <!-- type 'Linkable' is abstract 
+  <bean name="contentBeanFactory:Linkable" class="com.coremedia.coredining.contentbeans.LinkableImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Linkable'</description>
+  </bean>
+  -->
+
+  <bean name="contentBeanFactory:PageLayout" class="com.coremedia.coredining.contentbeans.PageLayoutImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'PageLayout'</description>
+  </bean>
+
+  <bean name="contentBeanFactory:Site" class="com.coremedia.coredining.contentbeans.SiteImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Site'</description>
+  </bean>
+
+  <bean name="contentBeanFactory:Symbol" class="com.coremedia.coredining.contentbeans.SymbolImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Symbol'</description>
+  </bean>
+
+  <bean name="contentBeanFactory:Topic" class="com.coremedia.coredining.contentbeans.TopicImpl" scope="prototype" parent="abstractContentBean">
+    <description>contentbean mapping for contents of type 'Topic'</description>
+  </bean>
+
+</beans>
